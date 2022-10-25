@@ -1,0 +1,115 @@
+.container {
+    margin: 0px auto;
+    border-radius: 10px;
+
+    /* border: 1px solid red; */
+}
+.gridView {
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    /* grid-template-rows: repeat(500, 8px); */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: auto auto;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 6px 6px;
+    background-color: black;
+    animation: levitate 1 linear forward;
+    /* padding: 20px; */
+}
+
+@keyframes levitate {
+    from {
+        box-shadow: none
+    } to {
+        box-shadow: 0px 0px 5px rgba(33, 230, 237, 0.418);
+    }
+}
+
+
+.emptyArt {
+    width: 140px;
+    height: 132px;
+    background-color: #303030;
+    /* border: 1px solid red; */
+}
+.emptyArt:hover {
+    background-color: transparent;    
+}
+.centerScale {
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid red; */
+}
+.rightScale {
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid red; */
+}
+
+.artHover:hover {
+    border-radius: 5px;
+    animation: scaleUp 0.3s linear forwards;
+    box-shadow: 3px 3px 50px black;
+}
+
+.artHover:not(:hover) {
+    animation: scaleDown 0.3s linear backwards;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1.0);
+
+    } 
+    to {
+        transform: scale(2.2);
+        backdrop-filter: blur(20px);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1.5);
+    } 
+    to {
+        transform: scale(1.0);
+    }
+}
+
+.artAndOverlay {
+    /* display: none; */
+    /* display: none; */
+}
+
+.artOverlay {
+    z-index: 9999;
+    position: fixed;
+    visibility: hidden;
+    font-size: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    opacity: 0.85;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+}
+
+.artDetails {
+    visibility: hidden;
+}
+
+
+.artistName {
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+}
+
+.artistLink {
+    color: whitesmoke;
+}
+
+

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { ArtGrid } from './components/ArtGrid';
+import { Header } from './components/header';
+import { Footer } from './components/footer';
+import {useState} from 'react'
+import { About } from './components/About';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+  function switchDarkMode() {
+    setDarkMode(!darkMode);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{backgroundColor: darkMode ? "#202020" : "whitesmoke" } }> 
+      <Header darkMode={darkMode} switchDarkMode={switchDarkMode} />
+      <About content={1} />
+      <ArtGrid />
+      <About content={2} />
+      <About content={3} />
+      <About content={4} />
+      <Footer />
     </div>
   );
 }

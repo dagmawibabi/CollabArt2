@@ -1,0 +1,22 @@
+.headerStyle {
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 25px;
+    /* font-weight: bold; */
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation span{
+    font-size: 14px;
+    margin-left: 20px;
+    color: #aaaaaa;
+}
+.navigation span:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}

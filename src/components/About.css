@@ -1,0 +1,89 @@
+.About {
+    margin: auto auto;
+    width: 40%;
+    text-align: center;
+    padding: 50px 0px;
+    /* border: 1px solid red; */
+}
+
+.Download {
+    margin: auto auto;
+    width: 30%;
+    text-align: center;
+    padding: 100px 0px 50px;
+    /* border: 1px solid red; */
+}
+.Contribute {
+    margin: auto auto;
+    width: 32%;
+    text-align: center;
+    padding: 50px 0px;
+    /* border: 1px solid red; */
+}
+
+.ThankYou {
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    color: rgb(201, 201, 201);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.downloadBtn {
+    border: none;
+    border-radius: 20px;
+    background-color: dodgerblue;
+    padding: 10px 20px;
+}
+.downloadBtn:hover {
+    background-color: greenyellow;
+    transform: scale(1.005);
+}
+
+.socialMedias {
+    display: inline;
+}
+
+.socialMediaLogo {
+    width: 35px;
+    height: 35px;
+    margin: 20px 12px;
+}
+
+.socialMediaLogo:hover {
+    animation: scaleUp 0.3s linear forwards;
+}
+
+.socialMediaLogo:not(:hover) {
+    animation: scaleDown 0.3s linear backwards;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1.0);
+
+    } 
+    to {
+        transform: scale(1.5);
+        backdrop-filter: blur(20px);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1.5);
+    } 
+    to {
+        transform: scale(1.0);
+    }
+}
