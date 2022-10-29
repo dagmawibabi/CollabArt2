@@ -117,10 +117,10 @@
     }
 }
 
-.artAndOverlay {
+/* .artAndOverlay { */
     /* display: none; */
     /* display: none; */
-}
+/* } */
 
 .artOverlay {
     z-index: 9999;
