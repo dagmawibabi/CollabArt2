@@ -1,8 +1,8 @@
 .About {
     margin: auto auto;
-    width: 40%;
+    width: 45%;
     text-align: center;
-    padding: 50px 0px;
+    padding: 80px 0px;
     /* border: 1px solid red; */
 }
 
@@ -20,6 +20,13 @@
     padding: 50px 0px;
     /* border: 1px solid red; */
 }
+.Contact {
+    margin: auto auto;
+    width: 40%;
+    text-align: center;
+    padding: 50px 0px;
+    /* border: 1px solid red; */
+}
 
 .ThankYou {
     color: whitesmoke;
@@ -29,21 +36,34 @@
 
 .title {
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.titleDark {
+    color: black;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .description {
-    color: rgb(201, 201, 201);
-    font-size: 12px;
+    color: #c9c9c9;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.descriptionDark {
+    color: #202020;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 .downloadBtn {
     border: none;
     border-radius: 20px;
-    background-color: dodgerblue;
+    background-color: rgb(19, 137, 254);
     padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    /* width: 350px; */
 }
 .downloadBtn:hover {
     background-color: greenyellow;
@@ -87,3 +107,40 @@
         transform: scale(1.0);
     }
 }
+
+.controls {
+    /* border: 1px solid red; */
+}
+
+.eachControl {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto 10px;
+    padding: 10px 15px 10px 20px;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.219); */
+    background-color: rgba(128, 128, 128);
+    /* border: 1px solid rgba(93, 93, 93, 0.128); */
+    /* border: 1px solid blue; */
+}
+.eachControl:hover {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto 10px;
+    padding: 10px 15px 10px 20px;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.239);
+}
+.eachControl:hover .controlTitle {
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.controlTitle {
+    color: rgb(220, 220, 220);
+    font-size: 16px;
+    /* line-height: 1.5; */
+}
+

@@ -1,25 +1,40 @@
 .container {
     margin: 0px auto;
     border-radius: 10px;
-
     /* border: 1px solid red; */
 }
 .gridView {
     display: grid;
-    grid-template-columns: repeat(4, 140px);
-    /* grid-template-rows: repeat(500, 8px); */
+    grid-template-columns: repeat(5, 250px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin: auto auto;
     width: fit-content;
     height: fit-content;
-    border: 1px solid black;
     border-radius: 10px;
     padding: 6px 6px;
-    background-color: black;
+    border: 1px solid rgba(93, 93, 93, 0.128);
+    /* background-color: rgb(55, 54, 54);    */
+    box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.419);
     animation: levitate 1 linear forward;
-    /* padding: 20px; */
 }
+
+.gridViewSmall {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: auto auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 6px 6px;
+    border: 1px solid rgba(93, 93, 93, 0.128);
+    /* background-color: rgb(55, 54, 54);    */
+    box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.419);
+    animation: levitate 1 linear forward;
+}
+
 
 @keyframes levitate {
     from {
@@ -40,19 +55,29 @@
     background-color: transparent;    
 }
 .centerScale {
-    width: 140px;
-    height: 140px;
+    width: 250px;
+    height: 250px;
     /* border: 1px solid red; */
 }
 .rightScale {
-    width: 140px;
-    height: 140px;
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid red; */
+}
+.centerScaleSmall {
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid red; */
+}
+.rightScaleSmall {
+    width: 150px;
+    height: 150px;
     /* border: 1px solid red; */
 }
 
 .artHover:hover {
     border-radius: 5px;
-    animation: scaleUp 0.3s linear forwards;
+    animation: scaleUp 0.2s linear forwards;
     box-shadow: 3px 3px 50px black;
 }
 
@@ -66,7 +91,7 @@
 
     } 
     to {
-        transform: scale(2.2);
+        transform: scale(5.0);
         backdrop-filter: blur(20px);
     }
 }
@@ -89,12 +114,12 @@
     z-index: 9999;
     position: fixed;
     visibility: hidden;
-    font-size: 10px;
-    padding: 8px 15px;
+    padding: 8px 20px;
     border-radius: 20px;
     opacity: 0.85;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
+    font-size: 12px;
 }
 
 .artDetails {
@@ -104,7 +129,6 @@
 
 .artistName {
     font-weight: bold;
-    font-size: 10px;
     color: white;
 }
 
