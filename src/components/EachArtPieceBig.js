@@ -12,10 +12,10 @@ export const EachArtPieceBig = (props) => {
                     <span className={props.darkMode ? 'artistLinkBigPiecesDark' : 'artistLinkBigPieces'} id={props.alt}> @{props.link} </span>
                 </div>
                 <div>
-                    <a href={props.image}>
+                    <a href={props.HQImage}>
                         <img className={props.darkMode ? 'viewEachArtPieceBigBtnDark' : 'viewEachArtPieceBigBtn'} src={require("../assets/icons/eye.png")} alt={props.alt}></img>
                     </a>
-                    <a href={props.image} download>
+                    <a href={props.HQImage} download>
                         <img className={props.darkMode ? 'downloadEachArtPieceBigBtnDark' : 'downloadEachArtPieceBigBtn'} src={require("../assets/icons/download.png")} alt={props.alt}></img>
                     </a>
                 </div>

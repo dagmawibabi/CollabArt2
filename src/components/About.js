@@ -33,21 +33,23 @@ export const About = (props) => {
             <span className={props.darkMode ? "title" : "titleDark"}> Download </span>
             <p className={props.darkMode ? "description" : "descriptionDark"}> You can download this gorgeous art piece in different resolutions for free. </p>
             <br />
-            <a href={projectUnity} download> 
-                <button className='downloadBtn'> Download Low Resolution ( 10.6 MB ) </button>
-            </a> 
-            <a href={projectUnity} download> 
-                <button className='downloadBtn'> Download Medium Resolution ( 20.6 MB ) </button>
-            </a> 
-            <a href={projectUnity} download> 
-                <button className='downloadBtn'> Download High Resolution ( 30.6 MB ) </button>
-            </a> 
-            <a href={projectUnity} download> 
-                <button className='downloadBtn'> Download Phone Wallpaper ( 30.6 MB ) </button>
-            </a> 
-            <a href={projectUnity} download> 
-                <button className='downloadBtn'> Download PC Wallpaper ( 30.6 MB ) </button>
-            </a> 
+            <div className='downloadBtns'>
+                <a href={projectUnity} download> 
+                    <button className='downloadBtn'> Download Low Resolution ( 10.6 MB ) </button>
+                </a> 
+                <a href={projectUnity} download> 
+                    <button className='downloadBtn'> Download Medium Resolution ( 20.6 MB ) </button>
+                </a> 
+                <a href={projectUnity} download> 
+                    <button className='downloadBtn'> Download High Resolution ( 30.6 MB ) </button>
+                </a> 
+                <a href={projectUnity} download> 
+                    <button className='downloadBtn'> Download Phone Wallpaper ( 30.6 MB ) </button>
+                </a> 
+                <a href={projectUnity} download> 
+                    <button className='downloadBtn'> Download PC Wallpaper ( 30.6 MB ) </button>
+                </a> 
+            </div>
         </div>
     } else if (props.content === 3) {
         return <div className='Contribute' id='contribute'>
@@ -63,7 +65,7 @@ export const About = (props) => {
     } else if (props.content === 4) {
         return <div className='Contact' id='contact'>
             <span className={props.darkMode ? "title" : "titleDark"}> Contact </span>
-            <p className={props.darkMode ? "description" : "descriptionDark"}> You can reach out to the developer and organizers of this project through the following socials. </p>
+            <p className={props.darkMode ? "description" : "descriptionDark"}> You can reach out to the developers and organizers of this project through the following socials. </p>
             <div className='socialMedias'> 
                 <a href='https://www.instagram.com/dagmawibabi/' target={"_blank"} rel="noreferrer">
                     <img className='socialMediaLogo' src={require("../assets/icons/instagram.png")} alt="logo" />

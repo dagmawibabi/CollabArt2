@@ -158,8 +158,10 @@ export const ArtGrid = (props) => {
     function showDetails(event) {
         let detailDIV = document.getElementsByClassName("artOverlay")[0];
         detailDIV.textContent = event.offsetX;
-        detailDIV.style.left = (event.screenX - 80) + "px";
-        detailDIV.style.top = (event.screenY - 160) + "px";
+        // detailDIV.style.left = (event.screenX - 80) + "px";
+        // detailDIV.style.top = (event.screenY - 160) + "px";
+        detailDIV.style.left = (event.clientX - 120) + "px";
+        detailDIV.style.top = (event.clientY - 100) + "px";
         detailDIV.style.visibility = "visible";
         let name = document.createElement("span");
         name.innerText = artList[event.target.alt]["artist"];
@@ -219,7 +221,7 @@ export const ArtGrid = (props) => {
                             return (
                                 content["uncompressed"] === "" ?
                                     <div> </div>
-                                : <EachArtPieceBig key={index} darkMode={props.darkMode} image={props.highQualityImages ? content["uncompressed"] : content["compressed"]} alt={index} gotoIGPage2={gotoIGPage2} artist={content["artist"]} link={content["link"]} />
+                                : <EachArtPieceBig key={index} darkMode={props.darkMode} image={props.highQualityImages ? content["uncompressed"] : content["compressed"]} HQImage={content["uncompressed"]} alt={index} gotoIGPage2={gotoIGPage2} artist={content["artist"]} link={content["link"]} />
                             )
                         }
                     )   

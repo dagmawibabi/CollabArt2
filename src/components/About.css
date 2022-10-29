@@ -8,7 +8,7 @@
 
 .Download {
     margin: auto auto;
-    width: 30%;
+    width: 35%;
     text-align: center;
     padding: 150px 0px 50px;
     /* border: 1px solid red; */
@@ -22,7 +22,7 @@
 }
 .Contact {
     margin: auto auto;
-    width: 40%;
+    width: 50%;
     text-align: center;
     padding: 50px 0px;
     /* border: 1px solid red; */
@@ -41,7 +41,7 @@
 
 .title {
     color: whitesmoke;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
 }
 .titleDark {
@@ -61,14 +61,19 @@
     line-height: 1.7;
 }
 
+.downloadBtns {
+    width: 50%;
+    margin: auto auto;
+    padding-top: 50px;
+}
 .downloadBtn {
     border: none;
     border-radius: 20px;
     background-color: rgb(19, 137, 254);
     padding: 10px 20px;
     margin-bottom: 10px;
-    font-size: 15px;
-    /* width: 350px; */
+    font-size: 16px;
+    width: 360px;
 }
 .downloadBtn:hover {
     background-color: greenyellow;
