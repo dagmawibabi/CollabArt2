@@ -10,7 +10,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [smallGrid, setSmallGrid] = useState(false);
   const [magnifyOnHover, setMagnifyOnHover] = useState(true);
-  const [highQualityImages, setHighQualityImages] = useState(true);
+  const [highQualityImages, setHighQualityImages] = useState(false);
   const [showArtistDetail, setShowArtistDetail] = useState(true);
 
   // let darkModeBGs = ["#fafafa", "#e4e5f1", "#d2d3db"]
