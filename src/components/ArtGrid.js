@@ -179,6 +179,12 @@ export const ArtGrid = (props) => {
     }
     function gotoIGPage(event) {
         let url = "https://www.instagram.com/" + artList[event.target.alt]["link"];
+        console.log(event.target.alt);
+        window.open(url, '_blank').focus();
+    }
+    function gotoIGPage2(event) {
+        let url = "https://www.instagram.com/" + artList[event.target.id]["link"];
+        // console.log(event.target.id);
         window.open(url, '_blank').focus();
     }
     return (
@@ -213,7 +219,7 @@ export const ArtGrid = (props) => {
                             return (
                                 content["uncompressed"] === "" ?
                                     <div> </div>
-                                : <EachArtPieceBig image={props.highQualityImages ? content["uncompressed"] : content["compressed"]} artist={content["artist"]} link={content["link"]} />
+                                : <EachArtPieceBig key={index} darkMode={props.darkMode} image={props.highQualityImages ? content["uncompressed"] : content["compressed"]} alt={index} gotoIGPage2={gotoIGPage2} artist={content["artist"]} link={content["link"]} />
                             )
                         }
                     )   

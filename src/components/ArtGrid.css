@@ -78,6 +78,7 @@
 .artHover:hover {
     border-radius: 5px;
     animation: scaleUp 0.2s linear forwards;
+    cursor: pointer;
     box-shadow: 3px 3px 50px black;
 }
 

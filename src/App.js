@@ -11,11 +11,11 @@ function App() {
   const [smallGrid, setSmallGrid] = useState(false);
   const [showArtistDetail, setShowArtistDetail] = useState(true);
   const [highQualityImages, setHighQualityImages] = useState(false);
-    let darkModeBGs = ["#fafafa", "#e4e5f1", "#d2d3db"]
+  // let darkModeBGs = ["#fafafa", "#e4e5f1", "#d2d3db"]
   function switchDarkMode() {
     setDarkMode(!darkMode);
     darkModeBGIndex++;
-    if(darkModeBGIndex > darkModeBGs.length){
+    if(darkModeBGIndex > 3){
       darkModeBGIndex = 0;
     }
 
@@ -35,7 +35,7 @@ function App() {
   }
 
   return (
-    <div className="App" style={{backgroundColor: darkMode ? "#202020" : "#fafafa" } }> 
+    <div className="App" style={{backgroundColor: darkMode ? "#202020" : "white" } }> 
       <Header darkMode={darkMode} switchDarkMode={switchDarkMode} />
       <About 
         content={1} 

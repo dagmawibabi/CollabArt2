@@ -2,17 +2,22 @@ import './EachArtPieceBig.css';
 
 export const EachArtPieceBig = (props) => {
     return (
-        <div className='eachArtPieceBigContainer'>
-            <img src={props.image} alt="art" className="sizeBig"></img>
+        <div className={props.darkMode ? "eachArtPieceBigContainerDark" : 'eachArtPieceBigContainer'}>
+            <img src={props.image} alt={props.alt} className="sizeBig"></img>
             <br />
-            <div className='captionAndDownload'>
-                <div className='caption'>
-                    <span className='artistNameBigPieces'> {props.artist} </span>
+            <div className={props.darkMode ? 'captionAndDownloadDark' : 'captionAndDownload'}>
+                <div className={props.darkMode ? 'captionDark' : 'caption'} onClick={props.gotoIGPage2} id={props.alt}>
+                    <span className={props.darkMode ? 'artistNameBigPiecesDark' : 'artistNameBigPieces'} id={props.alt}> {props.artist} </span>
                     <br></br>
-                    <span className='artistLinkBigPieces'> @{props.link} </span>
+                    <span className={props.darkMode ? 'artistLinkBigPiecesDark' : 'artistLinkBigPieces'} id={props.alt}> @{props.link} </span>
                 </div>
                 <div>
-                    <img className='downloadEachArtPieceBigBtn' src={require("../assets/icons/download.png")} alt='downloadBtn'></img>
+                    <a href={props.image}>
+                        <img className={props.darkMode ? 'viewEachArtPieceBigBtnDark' : 'viewEachArtPieceBigBtn'} src={require("../assets/icons/eye.png")} alt={props.alt}></img>
+                    </a>
+                    <a href={props.image} download>
+                        <img className={props.darkMode ? 'downloadEachArtPieceBigBtnDark' : 'downloadEachArtPieceBigBtn'} src={require("../assets/icons/download.png")} alt={props.alt}></img>
+                    </a>
                 </div>
             </div>
         </div>

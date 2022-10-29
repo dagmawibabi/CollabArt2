@@ -1,8 +1,8 @@
 .About {
     margin: auto auto;
-    width: 45%;
+    width: 50%;
     text-align: center;
-    padding: 80px 0px;
+    padding: 100px 0px 100px;
     /* border: 1px solid red; */
 }
 
@@ -10,14 +10,14 @@
     margin: auto auto;
     width: 30%;
     text-align: center;
-    padding: 100px 0px 50px;
+    padding: 150px 0px 50px;
     /* border: 1px solid red; */
 }
 .Contribute {
     margin: auto auto;
-    width: 32%;
+    width: 37%;
     text-align: center;
-    padding: 50px 0px;
+    padding: 150px 0px;
     /* border: 1px solid red; */
 }
 .Contact {
@@ -30,6 +30,11 @@
 
 .ThankYou {
     color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ThankYouDark {
+    color: black;
     font-size: 40px;
     font-weight: bold;
 }
@@ -47,13 +52,13 @@
 
 .description {
     color: #c9c9c9;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.7;
 }
 .descriptionDark {
     color: #202020;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 .downloadBtn {
@@ -109,6 +114,7 @@
 }
 
 .controls {
+    margin-top: 50px;
     /* border: 1px solid red; */
 }
 
@@ -120,7 +126,19 @@
     padding: 10px 15px 10px 20px;
     border-radius: 50px;
     /* box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.219); */
-    background-color: rgba(128, 128, 128);
+    background-color: whitesmoke;
+    /* border: 1px solid rgba(93, 93, 93, 0.128); */
+    /* border: 1px solid blue; */
+}
+.eachControlDark {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto 10px;
+    padding: 10px 15px 10px 20px;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.219); */
+    background-color: rgb(59, 59, 59);
     /* border: 1px solid rgba(93, 93, 93, 0.128); */
     /* border: 1px solid blue; */
 }
@@ -131,14 +149,33 @@
     margin: 0px auto 10px;
     padding: 10px 15px 10px 20px;
     border-radius: 50px;
+    background-color: rgb(224, 224, 224);
+}
+.eachControlDark:hover {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto 10px;
+    padding: 10px 15px 10px 20px;
+    border-radius: 50px;
     background-color: rgba(128, 128, 128, 0.239);
 }
 .eachControl:hover .controlTitle {
+    color: black;
+    font-size: 16px;
+}
+.eachControlDark:hover .controlTitleDark {
     color: whitesmoke;
     font-size: 16px;
 }
 
 .controlTitle {
+    color: black;
+    font-size: 16px;
+    /* line-height: 1.5; */
+}
+
+.controlTitleDark {
     color: rgb(220, 220, 220);
     font-size: 16px;
     /* line-height: 1.5; */
