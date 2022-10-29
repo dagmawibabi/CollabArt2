@@ -19,6 +19,7 @@
     animation: levitate 1 linear forward;
 }
 
+
 .gridViewSmall {
     display: grid;
     grid-template-columns: repeat(5, 150px);
@@ -76,15 +77,25 @@
 }
 
 .artHover:hover {
-    border-radius: 5px;
-    animation: scaleUp 0.2s linear forwards;
     cursor: pointer;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 50px black; */
+    /* animation: scaleUp 0.2s linear forwards; */
+}
+.artHoverHover:hover {
+    cursor: pointer;
+    border-radius: 5px;
     box-shadow: 3px 3px 50px black;
+    animation: scaleUp 0.2s linear forwards;
 }
 
 .artHover:not(:hover) {
     animation: scaleDown 0.3s linear backwards;
 }
+.artHover:not(:hover) {
+    animation: none;
+}
+
 
 @keyframes scaleUp {
     from {

@@ -189,20 +189,17 @@ export const ArtGrid = (props) => {
         // console.log(event.target.id);
         window.open(url, '_blank').focus();
     }
+    let artHover = (props.magnifyOnHover ? "artHoverHover" : "artHover");
     return (
         <div className="container">
-            <div className="artOverlay"> </div>                                     
+            <div className="artOverlay"> </div> 
             <div className={props.smallGrid ? "gridViewSmall" : "gridView"}> 
                 {
                     artList.map((content, index) => {
                             return (
                                 content["uncompressed"] === "" ?
-                                    (index + 1) % 4 === 0 ? 
-                                        <div className={props.smallGrid ? "emptyArt rightScaleSmall artHover" :"emptyArt rightScale artHover"}> </div> 
-                                    : <div className={props.smallGrid ? "emptyArt centerScaleSmall artHover" :"emptyArt centerScale artHover"}> </div>
-                                : (index + 1) % 4 === 0 ? 
-                                       <img key={index} src={props.highQualityImages ? content["uncompressed"] : content["compressed"]} className={props.smallGrid ? "rightScaleSmall artHover" :"rightScale artHover"} alt={index} onClick={gotoIGPage} onMouseMove={props.showArtistDetail ? showDetails : ()=>{}} onMouseOut={hideDetails}  />                                      
-                                  : <img key={index} src={props.highQualityImages ? content["uncompressed"] : content["compressed"]} className={props.smallGrid ? "centerScaleSmall artHover" : "centerScale artHover"} alt={index} onClick={gotoIGPage} onMouseMove={props.showArtistDetail ? showDetails : ()=>{}} onMouseOut={hideDetails} />
+                                    <div className={props.smallGrid ? "emptyArt centerScaleSmall " + artHover :"emptyArt centerScale " + artHover}> </div>
+                                : <img key={index} src={props.highQualityImages ? content["uncompressed"] : content["compressed"]} className={props.smallGrid ? "centerScaleSmall " + artHover : "centerScale " + artHover} alt={index} onClick={gotoIGPage} onMouseMove={props.showArtistDetail ? showDetails : ()=>{}} onMouseOut={hideDetails} />
                             )
                         }
                     )   
@@ -221,7 +218,7 @@ export const ArtGrid = (props) => {
                             return (
                                 content["uncompressed"] === "" ?
                                     <div> </div>
-                                : <EachArtPieceBig key={index} darkMode={props.darkMode} image={props.highQualityImages ? content["uncompressed"] : content["compressed"]} HQImage={content["uncompressed"]} alt={index} gotoIGPage2={gotoIGPage2} artist={content["artist"]} link={content["link"]} />
+                                : <EachArtPieceBig key={index} darkMode={props.darkMode} magnifyOnHover={props.magnifyOnHover} image={props.highQualityImages ? content["uncompressed"] : content["compressed"]} HQImage={content["uncompressed"]} alt={index} gotoIGPage2={gotoIGPage2} artist={content["artist"]} link={content["link"]} />
                             )
                         }
                     )   

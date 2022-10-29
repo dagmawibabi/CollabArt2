@@ -9,8 +9,10 @@ let darkModeBGIndex = 0;
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [smallGrid, setSmallGrid] = useState(false);
+  const [magnifyOnHover, setMagnifyOnHover] = useState(true);
+  const [highQualityImages, setHighQualityImages] = useState(true);
   const [showArtistDetail, setShowArtistDetail] = useState(true);
-  const [highQualityImages, setHighQualityImages] = useState(false);
+
   // let darkModeBGs = ["#fafafa", "#e4e5f1", "#d2d3db"]
   function switchDarkMode() {
     setDarkMode(!darkMode);
@@ -25,13 +27,17 @@ function App() {
   function changeGridSize(){
     setSmallGrid(!smallGrid);
   }
-  // Artist Detail
-  function changeShowArtistDetail(){
-    setShowArtistDetail(!showArtistDetail);
+  // Magnify on Hover
+  function changeMagnifyOnHover(){
+    setMagnifyOnHover(!magnifyOnHover);
   }
   // High Quality Images
   function changeHighQualityImages(){
     setHighQualityImages(!highQualityImages);
+  }
+  // Artist Detail
+  function changeShowArtistDetail(){
+    setShowArtistDetail(!showArtistDetail);
   }
 
   return (
@@ -42,10 +48,17 @@ function App() {
         darkMode={darkMode}
         smallGrid={smallGrid} changeGridSize={changeGridSize} 
         showArtistDetail={showArtistDetail} changeShowArtistDetail={changeShowArtistDetail}
-        highQualityImages={highQualityImages} changeHighQualityImages={changeHighQualityImages}
-        
+        highQualityImages={highQualityImages} changeHighQualityImages={changeHighQualityImages}        
+        magnifyOnHover={magnifyOnHover} changeMagnifyOnHover={changeMagnifyOnHover}
       />
-      <ArtGrid darkMode={darkMode} smallGrid={smallGrid} showArtistDetail={showArtistDetail} highQualityImages={highQualityImages} />
+      <ArtGrid 
+        darkMode={darkMode} 
+        smallGrid={smallGrid} 
+        showArtistDetail={showArtistDetail} 
+        highQualityImages={highQualityImages} 
+        magnifyOnHover={magnifyOnHover} 
+        changeMagnifyOnHover={changeMagnifyOnHover}
+      />
       <About content={2} darkMode={darkMode}/>
       <About content={3} darkMode={darkMode}/>
       <About content={4} darkMode={darkMode}/>

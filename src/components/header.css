@@ -1,8 +1,7 @@
 .headerStyle {
-    color: white;
+    /* color: white; */
     text-align: center;
     padding: 20px 20px;
-    font-size: 22px;
     /* font-weight: bold; */
     background-color: #101010;
     display: flex;
@@ -15,13 +14,38 @@
 
 .navigation span{
     font-size: 16px;
-    margin-left: 20px;
-    color: #aaaaaa;
+    /* margin-left: 20px; */
+    color: #dcdcdc;
+    margin: 0px 10px 0px 20px;
 }
 .navigation span:hover {
-    color: white;
+    color: cyan;
 }
 
 a {
     text-decoration: none;
 }
+.projectLogoAndName {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 350px;
+    /* border: 1px solid red; */
+}
+.projectLogo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    /* border: 1px solid blue; */
+}
+
+.projectTitle {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: auto auto;
+    /* border: 1px solid red; */
+}
+
+

@@ -76,7 +76,7 @@
     width: 360px;
 }
 .downloadBtn:hover {
-    background-color: greenyellow;
+    background-color: cyan;
     transform: scale(1.005);
 }
 

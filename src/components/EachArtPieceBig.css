@@ -31,10 +31,16 @@
     margin: auto auto;
     padding: 0px 0px 10px;
 }
-.sizeBig:hover {
+.sizeBigHover {
+    width: 600px;
+    height: 600px;
+    margin: auto auto;
+    padding: 0px 0px 10px;
+}
+.sizeBigHover:hover {
     animation: scaleUp 0.2s linear forwards;
 }
-.sizeBig:not(:hover) {
+.sizeBigHover:not(:hover) {
     animation: scaleDown 0.3s linear backwards;
 }
 
@@ -154,7 +160,7 @@
     margin: 5px 5px 0px;
     padding: 5px 7px;
     cursor: pointer;    
-    background-color: dodgerblue;
+    background-color: greenyellow;
 }
 .downloadEachArtPieceBigBtn {
     width: 25px;
@@ -180,7 +186,7 @@
     margin: 6px 5px 0px;
     padding: 5px;
     cursor: pointer;
-    background-color: greenyellow;
+    background-color: cyan;
 }
 .downloadEachArtPieceBigBtnDark:hover {
     width: 25px;
@@ -189,5 +195,5 @@
     margin: 6px 5px 0px;
     padding: 5px;
     cursor: pointer;
-    background-color: greenyellow;
+    background-color: cyan;
 }

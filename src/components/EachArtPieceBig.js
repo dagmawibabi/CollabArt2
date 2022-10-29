@@ -3,7 +3,7 @@ import './EachArtPieceBig.css';
 export const EachArtPieceBig = (props) => {
     return (
         <div className={props.darkMode ? "eachArtPieceBigContainerDark" : 'eachArtPieceBigContainer'}>
-            <img src={props.image} alt={props.alt} className="sizeBig"></img>
+            <img src={props.image} alt={props.alt} className={props.magnifyOnHover ? "sizeBigHover" : "sizeBig"}></img>
             <br />
             <div className={props.darkMode ? 'captionAndDownloadDark' : 'captionAndDownload'}>
                 <div className={props.darkMode ? 'captionDark' : 'caption'} onClick={props.gotoIGPage2} id={props.alt}>

@@ -1,5 +1,5 @@
 import './About.css'
-import projectUnity from '../assets/uncompressed/1.png'
+import projectUnity from '../assets/uncompressed/ALL.png'
 import Switch from "react-switch";
 // import { useState } from 'react';
 
@@ -15,16 +15,20 @@ export const About = (props) => {
                 <br />
                 <br />
                 <div className={props.darkMode ? 'eachControlDark' : 'eachControl'} >
+                    <span className={props.darkMode ? 'controlTitleDark' : 'controlTitle'}> Smaller Images </span>
+                    <Switch onChange={props.changeGridSize} checked={props.smallGrid} onColor="#00AA00" offColor="#880000"  />
+                </div>
+                <div className={props.darkMode ? 'eachControlDark' : 'eachControl'} >
+                    <span className={props.darkMode ? 'controlTitleDark' : 'controlTitle'}> Magnify on Hover </span>
+                    <Switch onChange={props.changeMagnifyOnHover} checked={props.magnifyOnHover} onColor="#00AA00" offColor="#880000"  />
+                </div>
+                <div className={props.darkMode ? 'eachControlDark' : 'eachControl'} >
                     <span className={props.darkMode ? 'controlTitleDark' : 'controlTitle'}> High Quality Images </span>
                     <Switch onChange={props.changeHighQualityImages} checked={props.highQualityImages} onColor="#00AA00" offColor="#880000"  />
                 </div>
                 <div className={props.darkMode ? 'eachControlDark' : 'eachControl'} >
                     <span className={props.darkMode ? 'controlTitleDark' : 'controlTitle'}> Artist Detail on Hover</span>
                     <Switch onChange={props.changeShowArtistDetail} checked={props.showArtistDetail} onColor="#00AA00" offColor="#880000"  />
-                </div>
-                <div className={props.darkMode ? 'eachControlDark' : 'eachControl'} >
-                    <span className={props.darkMode ? 'controlTitleDark' : 'controlTitle'}> Smaller Images </span>
-                    <Switch onChange={props.changeGridSize} checked={props.smallGrid} onColor="#00AA00" offColor="#880000"  />
                 </div>
             </div>
         </div>
