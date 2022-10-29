@@ -29,19 +29,19 @@ export const ArtGrid = (props) => {
             "link": "sd_selam_art"
         },
         {
-            "compressed": require("../assets/compressed/9.png"),
+            "compressed": require("../assets/compressed/9.jpg"),
             "uncompressed": require("../assets/uncompressed/9.png"),
             "artist": "Michael Gebru",
             "link": "michael_gebru7"
         },
         {
-            "compressed": require("../assets/compressed/22.png"),
+            "compressed": require("../assets/compressed/22.jpg"),
             "uncompressed": require("../assets/uncompressed/22.png"),
             "artist": "Yohanan Mengistu",
             "link": "y.ohanan"
         },
         {
-            "compressed": require("../assets/compressed/15.png"),
+            "compressed": require("../assets/compressed/15.jpg"),
             "uncompressed": require("../assets/uncompressed/15.png"),
             "artist": "Estifanos Tewodros",
             "link": "steve.arts_"
@@ -59,14 +59,14 @@ export const ArtGrid = (props) => {
             "link": "nohuyop"
         },
         {
-            "compressed": require("../assets/compressed/5.png"),
+            "compressed": require("../assets/compressed/5.jpg"),
             "uncompressed": require("../assets/uncompressed/5.png"),
             "artist": "Samuel Chalachew",
             "link": "sammy_drawss"
         },
         {
-            "compressed": require("../assets/compressed/23.png"),
-            "uncompressed": require("../assets/compressed/23.png"),
+            "compressed": require("../assets/compressed/23.jpg"),
+            "uncompressed": require("../assets/uncompressed/23.png"),
             "artist": "Tsemru Firemariam",
             "link": "tsemru.f"
         },
@@ -107,7 +107,7 @@ export const ArtGrid = (props) => {
             "link": "abby.comics"
         },
         {
-            "compressed": require("../assets/compressed/12.png"),
+            "compressed": require("../assets/compressed/12.jpg"),
             "uncompressed": require("../assets/uncompressed/12.PNG"),
             "artist": "Maraki Girma",
             "link": "maraki_girma"
@@ -143,7 +143,7 @@ export const ArtGrid = (props) => {
             "link": "tina1creates"
         },
         {
-            "compressed": require("../assets/compressed/18.png"),
+            "compressed": require("../assets/compressed/18.jpg"),
             "uncompressed": require("../assets/uncompressed/18.png"),
             "artist": "Biruk Yohannes",
             "link": "biruk.blend"
