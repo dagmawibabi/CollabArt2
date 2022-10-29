@@ -7,7 +7,7 @@ export const About = (props) => {
      if(props.content === 1){
         return <div className='About' id='about'>
             <span className={props.darkMode ? "title" : "titleDark"}> About </span>
-            <p className={props.darkMode ? "description" : "descriptionDark"}> The Unity Project Mural is a digital destination hosting the biggest and most diverse collaboration art where people can share their arts and edits in a way that connects to all art pieces surrounding it telling the story of how we as humans are all entwined, entangled and connected to one another in different aspects of life. All the artwork found within this project came from the incredible and diverse creative community all around the world. </p>
+            <p className={props.darkMode ? "description" : "descriptionDark"}> The Unity Project Mural is the biggest and most diverse collaboration art where people can share their arts in a way that connects to all art pieces surrounding it telling the story of how we, as humans, are all entwined, entangled and connected to one another in different aspects of life. All the artwork found within this project came from the incredible and diverse creative community all around the world. </p>
             <br />
             <br />
             <div className='controls'> 
