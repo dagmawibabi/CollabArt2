@@ -95,14 +95,14 @@ export const ArtGrid = (props) => {
             "link": "eyoel_99"
         },
         {
-            "compressed": "",
-            "uncompressed": "",
-            "artist": "",
-            "link": ""
+            "compressed": require("../assets/compressed/24.jpg"),
+            "uncompressed": require("../assets/uncompressed/24.png"),
+            "artist": "Yohannes Tesfu",
+            "link": "johntesfu5"
         },
         {
-            "compressed": require("../assets/compressed/16.jpg"),
-            "uncompressed": require("../assets/uncompressed/16.jpg"),
+            "compressed": require("../assets/compressed/16.png"),
+            "uncompressed": require("../assets/uncompressed/16.png"),
             "artist": "Michael Asrat",
             "link": "abby.comics"
         },
@@ -125,10 +125,10 @@ export const ArtGrid = (props) => {
             "link": "daniel_temesgen_"
         },
         {
-            "compressed": "",
-            "uncompressed": "",
-            "artist": "",
-            "link": ""
+            "compressed": require("../assets/compressed/25.jpg"),
+            "uncompressed": require("../assets/uncompressed/25.jpg"),
+            "artist": "Robel Tamiru",
+            "link": "dotphic"
         },
         {
             "compressed": require("../assets/compressed/20.jpg"),
@@ -190,27 +190,29 @@ export const ArtGrid = (props) => {
         window.open(url, '_blank').focus();
     }
     let artHover = (props.magnifyOnHover ? "artHoverHover" : "artHover");
-    return (
-        <div className="container">
+    if(props.content === 1){
+        return <div className="container">
             <div className="artOverlay"> </div> 
             <div className={props.smallGrid ? "gridViewSmall" : "gridView"}> 
-                {
-                    artList.map((content, index) => {
-                            return (
-                                content["uncompressed"] === "" ?
-                                    <div className={props.smallGrid ? "emptyArt centerScaleSmall " + artHover :"emptyArt centerScale " + artHover}> </div>
-                                : <img key={index} src={props.highQualityImages ? content["uncompressed"] : content["compressed"]} className={props.smallGrid ? "centerScaleSmall " + artHover : "centerScale " + artHover} alt={index} onClick={gotoIGPage} onMouseMove={props.showArtistDetail ? showDetails : ()=>{}} onMouseOut={hideDetails} />
-                            )
-                        }
-                    )   
-                }
+            {
+                artList.map((content, index) => {
+                        return (
+                            content["uncompressed"] === "" ?
+                                <div className={props.smallGrid ? "emptyArt centerScaleSmall " + artHover :"emptyArt centerScale " + artHover}> </div>
+                            : <img key={index} src={props.highQualityImages ? content["uncompressed"] : content["compressed"]} className={props.smallGrid ? "centerScaleSmall " + artHover : "centerScale " + artHover} alt={index} onClick={gotoIGPage} onMouseMove={props.showArtistDetail ? showDetails : ()=>{}} onMouseOut={hideDetails} />
+                        )
+                    }
+                )   
+            }
             </div>
-            <div className="artOverlay"> </div>                                     
-            {/* <div className={props.smallGrid ? "gridViewSmall" : "gridView"}>  */}
+            <div className="artOverlay"> </div> 
+        </div>
+    } else if (props.content === 2){
+        return <div>
             <div style={{marginTop: "100px"}}></div> 
             <div style={{textAlign: "center"}}>
-                <span style={{color: props.darkMode ? "whitesmoke" : "black", textAlign: "center", fontSize: "22px", fontWeight: "bold"}}> Let's admire all the individual pieces </span>
-                <p style={{color: props.darkMode ? "#c9c9c9" : "#202020"}}> Here you can look at all the individual art pieces that make up the beautiful mural in detail </p>
+            <span style={{color: props.darkMode ? "whitesmoke" : "black", textAlign: "center", fontSize: "22px", fontWeight: "bold"}}> Let's admire all the individual pieces </span>
+            <p style={{color: props.darkMode ? "#c9c9c9" : "#202020"}}> Here you can look at all the individual art pieces that make up the beautiful mural in detail </p>
             </div>
             <div > 
                 {
@@ -225,5 +227,5 @@ export const ArtGrid = (props) => {
                 }
             </div>
         </div>
-    );
+    }
 }
