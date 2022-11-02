@@ -6,7 +6,7 @@ export const Header = (props) => {
             <img src={ props.darkMode ? require("../assets/icons/brightness.png") : require("../assets/icons/crescent-moon.png")} alt="lightmode" onClick={props.switchDarkMode} style={props.darkMode ? {width: "22px", height: "22px", cursor: "pointer"} : {width: "18px", height: "18px", cursor: "pointer"}} />
             <div className='projectLogoAndName'>
                 <img src={require("../assets/icons/unity.png")} alt="logo" className='projectLogo' />
-                <span className='projectTitle'> The Unity Project Mural </span>
+                <span className='projectTitle' title="I rain you med, all this art but you're the art I wanna look at forever!"> The Unity Project Mural </span>
             </div>
             <div className='navigation'>
                 <a href='#about' rel='noreferrer'> 
