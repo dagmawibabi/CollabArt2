@@ -9,8 +9,32 @@ import Positions from '../assets/icons/positions.png'
 import Switch from "react-switch";
 // import { useState } from 'react';
 
+let curAPIURLBase = 'https://dagmawibabi.com/tupm/allResolutionDownloadCount/';
 export const About = (props) => {
-     if(props.content === 1){
+    // Download Count
+    async function allResDownloadCount1(event) {
+        fetch(curAPIURLBase + '1')
+        .then((response) => response.json())
+        .catch((e) => console.log("error: " + e))
+    }
+    async function allResDownloadCount2(event) {
+        fetch(curAPIURLBase + '2')
+        .then((response) => response.json())
+        .catch((e) => console.log("error: " + e))
+    }
+    async function allResDownloadCount3(event) {
+        fetch(curAPIURLBase + '3')
+        .then((response) => response.json())
+        .catch((e) => console.log("error: " + e))
+    }
+    async function allResDownloadCount4(event) {
+        fetch(curAPIURLBase + '4')
+        .then((response) => response.json())
+        .catch((e) => console.log("error: " + e))
+    }
+
+    // UI
+    if(props.content === 1){
         return <div className='About' id='about'>
             <span className={props.darkMode ? "title" : "titleDark"}> About </span>
             <p className={props.darkMode ? "description" : "descriptionDark"}> The Unity Project Mural is the biggest and most diverse collaboration art where people can share their arts in a way that connects to all art pieces surrounding it telling the story of how we, as humans, are all entwined, entangled and connected to one another in different aspects of life. All the artwork found within this project came from the incredible and diverse creative community all around the world. </p>
@@ -21,17 +45,17 @@ export const About = (props) => {
             <p className={props.darkMode ? "description" : "descriptionDark"}> You can download this gorgeous art piece in different resolutions for free. </p>
             <br />
             <div className='downloadBtns'>
-                <a href={projectUnity1} download> 
-                    <button className='downloadBtn'> Download Low Resolution ( 6.2 MB ) </button>
+                <a href={projectUnity1} onClick={allResDownloadCount1} download> 
+                    <button onClick={allResDownloadCount1} className='downloadBtn'> Download Low Resolution ( 6.2 MB ) </button>
                 </a> 
-                <a href={projectUnity2} download> 
-                    <button className='downloadBtn'> Download Medium Resolution ( 21.0 MB ) </button>
+                <a href={projectUnity2} onClick={allResDownloadCount2} download> 
+                    <button onClick={allResDownloadCount2} className='downloadBtn'> Download Medium Resolution ( 21.0 MB ) </button>
                 </a> 
-                <a href={projectUnity3} download> 
-                    <button className='downloadBtn'> Download High Resolution ( 39.2 MB ) </button>
+                <a href={projectUnity3} onClick={allResDownloadCount3} download> 
+                    <button onClick={allResDownloadCount3} className='downloadBtn'> Download High Resolution ( 39.2 MB ) </button>
                 </a> 
-                <a href={projectUnity4} download> 
-                    <button className='downloadBtn'> Download Ultra-High Resolution ( 59.5 MB ) </button>
+                <a href={projectUnity4} onClick={allResDownloadCount4} download> 
+                    <button onClick={allResDownloadCount4} className='downloadBtn'> Download Ultra-High Resolution ( 59.5 MB ) </button>
                 </a> 
             </div>
         </div>
@@ -41,7 +65,7 @@ export const About = (props) => {
             <p className={props.darkMode ? "description" : "descriptionDark"}> If you are a digital artist wanting to contribute to this collection of connected art pieces, follow the steps below accordingly and your art will be hosted here in no time! </p>
             {/* <p className={props.darkMode ? "description" : "descriptionDark"}> Follow these steps to contribute </p> */}
             <p className={props.darkMode ? "description" : "descriptionDark"}> 1. Pick an empty box that has a drawing above, beside or below it </p>
-            <img src={Positions} style={{width: "380px", height: "730px"}} alt="positions" /> 
+            <img src={Positions} style={{width: "350px", height: "700px"}} alt="positions" /> 
             <p className={props.darkMode ? "description" : "descriptionDark"}> 2. Join <a href="https://t.me/+VrGpsjEU4bdiZDE0" style={props.darkMode ? {color: "cyan"} : {color: "royalblue"}}> @TheUnityProjectMuralGroup </a> on telegram  </p>
             <p className={props.darkMode ? "description" : "descriptionDark"}> 3. Check the group for the pinned messages to check if the spot you chose is reserved or not </p>
             <p className={props.darkMode ? "description" : "descriptionDark"}> 4. If the spot is reserved; Pick another spot above and recheck </p>

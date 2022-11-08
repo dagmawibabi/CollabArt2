@@ -5,7 +5,7 @@ import { Footer } from './components/footer';
 import { About } from './components/About';
 import { useState, useEffect } from 'react'
 
-let curAPIURLBase = 'http://localhost:5000/tupm';
+let curAPIURLBase = 'https://dagmawibabi.com/tupm/addVisitorsCount/';
 let darkModeBGIndex = 0;
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -48,7 +48,7 @@ function App() {
 
   // Visitors Count
   useEffect(()=>{
-    fetch(curAPIURLBase + '/addVisitorsCount') 
+    fetch(curAPIURLBase) 
     .then((response) => response.json())
     .then((responseJSON) => {setVisitorsCount(responseJSON["visitorsCount"]);})
     .catch((e) => console.log("error: " + e))
