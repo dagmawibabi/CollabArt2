@@ -146,11 +146,10 @@
 }
 
 .letsAdmire {
-    width: 88%;
+    width: 100%;
     margin: auto auto;
-    padding-top: 20px;
+    /* margin-top: -40px; */
 }
-
 
 /* RESPONSIVENESS */
 @media (max-width: 500px) {
@@ -204,4 +203,15 @@
         height: 150px;
         /* border: 1px solid red; */
     }
+    .letsAdmire {
+        width: 100%;
+        margin: auto auto;
+        margin-top: -40px;
+    }
+    .letsAdmire p {
+        width: 88%;
+        margin: auto auto;
+        padding-top: 20px;
+    }
+    
 }

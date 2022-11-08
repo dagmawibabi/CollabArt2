@@ -16,7 +16,7 @@
     font-size: 16px;
     /* margin-left: 20px; */
     color: #dcdcdc;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 30px 0px 0px;
 }
 .navigation span:hover {
     color: cyan;
@@ -78,7 +78,7 @@ a {
         /* border: 1px solid blue; */
     }
     .projectTitle {
-        font-size: 18px;
+        font-size: 20px;
         color: white;
         font-weight: bold;
         margin: auto auto;

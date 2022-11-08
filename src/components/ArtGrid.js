@@ -208,11 +208,11 @@ export const ArtGrid = (props) => {
             <div className="artOverlay"> </div> 
         </div>
     } else if (props.content === 2){
-        return <div>
+        return <div className='letsAdmire'>
             <div style={{marginTop: "100px"}}></div> 
             <div style={{textAlign: "center"}}>
             <span style={{color: props.darkMode ? "whitesmoke" : "black", textAlign: "center", fontSize: "22px", fontWeight: "bold"}}> Let's admire all the individual pieces </span>
-            <p className='letsAdmire' style={{color: props.darkMode ? "#c9c9c9" : "#202020"}}> Here you can look at all the individual art pieces that make up the beautiful mural in detail </p>
+            <p style={{color: props.darkMode ? "#c9c9c9" : "#202020"}}> Here you can look at all the individual art pieces that make up the beautiful mural in detail </p>
             </div>
             <div > 
                 {
