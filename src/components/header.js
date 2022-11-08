@@ -3,7 +3,7 @@ import './header.css'
 export const Header = (props) => {
     return (
         <div className='headerStyle' > 
-            <img src={ props.darkMode ? require("../assets/icons/brightness.png") : require("../assets/icons/crescent-moon.png")} alt="lightmode" onClick={props.switchDarkMode} style={props.darkMode ? {width: "22px", height: "22px", cursor: "pointer"} : {width: "18px", height: "18px", cursor: "pointer"}} />
+            <img className='darkMode' src={ props.darkMode ? require("../assets/icons/brightness.png") : require("../assets/icons/crescent-moon.png")} alt="lightmode" onClick={props.switchDarkMode} style={props.darkMode ? {width: "22px", height: "22px", cursor: "pointer"} : {width: "18px", height: "18px", cursor: "pointer"}} />
             <div className='projectLogoAndName'>
                 <img src={require("../assets/icons/unity.png")} alt="logo" className='projectLogo' />
                 <span className='projectTitle' title="I rain you med, all this art but you're the art I wanna look at forever!"> The Unity Project Mural </span>

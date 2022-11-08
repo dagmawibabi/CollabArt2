@@ -197,3 +197,43 @@
     cursor: pointer;
     background-color: cyan;
 }
+
+
+@media (max-width: 500px) {
+    .sizeBig {
+        width: 380px;
+        height: 380px;
+        margin: auto auto;
+        padding: 0px 0px 10px;
+    }
+    .sizeBigHover {
+        width: 380px;
+        height: 380px;
+        margin: auto auto;
+        padding: 0px 0px 10px;
+    }
+    .artistNameBigPieces {
+        font-weight: bold;
+        color: black;
+        font-size: 14px;
+    }
+    .artistNameBigPiecesDark {
+        font-weight: bold;
+        color: white;
+        font-size: 14px;
+    }
+    .artistLinkBigPieces {
+        color: black;
+        font-size: 12px;
+    }
+    .artistLinkBigPiecesDark {
+        color: whitesmoke;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+

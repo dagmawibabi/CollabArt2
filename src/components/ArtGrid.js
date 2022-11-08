@@ -212,7 +212,7 @@ export const ArtGrid = (props) => {
             <div style={{marginTop: "100px"}}></div> 
             <div style={{textAlign: "center"}}>
             <span style={{color: props.darkMode ? "whitesmoke" : "black", textAlign: "center", fontSize: "22px", fontWeight: "bold"}}> Let's admire all the individual pieces </span>
-            <p style={{color: props.darkMode ? "#c9c9c9" : "#202020"}}> Here you can look at all the individual art pieces that make up the beautiful mural in detail </p>
+            <p className='letsAdmire' style={{color: props.darkMode ? "#c9c9c9" : "#202020"}}> Here you can look at all the individual art pieces that make up the beautiful mural in detail </p>
             </div>
             <div > 
                 {
