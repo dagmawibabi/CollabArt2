@@ -147,10 +147,14 @@
 }
 .letsAdmire p {
     padding-bottom: 20px;    
+    color: #c9c9c9;
+    font-size: 15px;
+    line-height: 1.7;
 }
 
 /* RESPONSIVENESS */
-@media (max-width: 500px) {
+/* Phone */
+@media (max-width: 520px) {
     .gridView {
         display: grid;
         grid-template-columns: repeat(5, 80px);
@@ -213,3 +217,71 @@
     }
     
 }
+
+/* Tablet */
+@media (min-width: 521px) {
+    .gridView {
+        display: grid;
+        grid-template-columns: repeat(5, 180px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: auto auto;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 10px;
+        padding: 6px 6px;
+        border: 1px solid rgba(93, 93, 93, 0.128);
+        /* background-color: rgb(55, 54, 54);    */
+        box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.419);
+        animation: levitate 1 linear forward;
+    }
+    .gridViewSmall {
+        display: grid;
+        grid-template-columns: repeat(5, 180px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: auto auto;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 10px;
+        padding: 6px 6px;
+        border: 1px solid rgba(93, 93, 93, 0.128);
+        /* background-color: rgb(55, 54, 54);    */
+        box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.419);
+        animation: levitate 1 linear forward;
+    }
+    .centerScale {
+        width: 180px;
+        height: 180px;
+        /* border: 1px solid red; */
+    }
+    .rightScale {
+        width: 180px;
+        height: 180px;
+        /* border: 1px solid red; */
+    }
+    .centerScaleSmall {
+        width: 180px;
+        height: 180px;
+        /* border: 1px solid red; */
+    }
+    .rightScaleSmall {
+        width: 180px;
+        height: 180px;
+        /* border: 1px solid red; */
+    }
+    .letsAdmire {
+        width: 100%;
+        margin: auto auto;
+        margin-top: -40px;
+    }
+    .letsAdmire p {
+        width: 88%;
+        margin: auto auto;
+        padding-top: 20px;
+    }
+    
+}
+
+
+

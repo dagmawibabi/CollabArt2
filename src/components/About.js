@@ -1,5 +1,8 @@
 import './About.css'
-import projectUnity from '../assets/uncompressed/ALL.png'
+import projectUnity1 from '../assets/uncompressed/ALL1.png'
+import projectUnity2 from '../assets/uncompressed/ALL2.png'
+import projectUnity3 from '../assets/uncompressed/ALL3.png'
+import projectUnity4 from '../assets/uncompressed/ALL4.png'
 import Switch from "react-switch";
 // import { useState } from 'react';
 
@@ -15,20 +18,17 @@ export const About = (props) => {
             <p className={props.darkMode ? "description" : "descriptionDark"}> You can download this gorgeous art piece in different resolutions for free. </p>
             <br />
             <div className='downloadBtns'>
-                <a href={projectUnity} download> 
-                    <button className='downloadBtn'> Download Low Resolution ( 10.6 MB ) </button>
+                <a href={projectUnity1} download> 
+                    <button className='downloadBtn'> Download Low Resolution ( 6.2 MB ) </button>
                 </a> 
-                <a href={projectUnity} download> 
-                    <button className='downloadBtn'> Download Medium Resolution ( 20.6 MB ) </button>
+                <a href={projectUnity2} download> 
+                    <button className='downloadBtn'> Download Medium Resolution ( 21.0 MB ) </button>
                 </a> 
-                <a href={projectUnity} download> 
-                    <button className='downloadBtn'> Download High Resolution ( 30.6 MB ) </button>
+                <a href={projectUnity3} download> 
+                    <button className='downloadBtn'> Download High Resolution ( 39.2 MB ) </button>
                 </a> 
-                <a href={projectUnity} download> 
-                    <button className='downloadBtn'> Download Phone Wallpaper ( 30.6 MB ) </button>
-                </a> 
-                <a href={projectUnity} download> 
-                    <button className='downloadBtn'> Download PC Wallpaper ( 30.6 MB ) </button>
+                <a href={projectUnity4} download> 
+                    <button className='downloadBtn'> Download Ultra-High Resolution ( 59.5 MB ) </button>
                 </a> 
             </div>
         </div>
@@ -77,9 +77,9 @@ export const About = (props) => {
             // <div className='About'>
                 <div className={props.darkMode ? 'ControlsDark' : 'Controls'} > 
                     <div style={{display: "block", "justifyContent": "center"}}>
-                        <span className={props.darkMode ? "title" : "titleDark"} style={{cursor: "pointer", fontSize: "18px"}} onClick={props.changeExpand}> Grid Controls </span>
+                        <span className={props.darkMode ? "title controlTitleHover" : "titleDark controlTitleHoverDark"} style={{cursor: "pointer", fontSize: "18px"}} onClick={props.changeExpand}> Grid Controls </span>
                         <div style={{height: "5px"}}> </div>
-                        <span className={props.darkMode ? "title" : "titleDark"} style={{cursor: "pointer", fontSize: "12px", fontWeight: "normal"}} onClick={props.changeExpand}> {props.isExpanded ? "click to collapse ↑" : "click to expand ↓"} </span>
+                        <span className={props.darkMode ? "title controlTitleHover" : "titleDark controlTitleHoverDark"} style={{cursor: "pointer", fontSize: "12px", fontWeight: "normal"}} onClick={props.changeExpand}> {props.isExpanded ? "click to collapse ↑" : "click to expand ↓"} </span>
                         {props.isExpanded ? (<div> <br/> <br/> </div>) : ""}
 
                     </div>
