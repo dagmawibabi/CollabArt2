@@ -51,16 +51,16 @@
     border-radius: 20px;
     background-color: #272727;
     border: 1px solid transparent;
-    border: solid 1px;
-    clip-path: inset(0 round 1px);
+    /* border: solid 1px;/
+    clip-path: inset(0 round 1px); */
 }
 .ControlsDark:hover {
     border: 1px solid rgb(86, 86, 86);
-    border-radius: 10px;
-    z-index: 9999;
+    border-radius: 20px;
+    /* z-index: 9999;
     border: solid 1px;
     border-image: linear-gradient(90deg, purple, orange) 1;
-    clip-path: inset(0 round 2px);
+    clip-path: inset(0 round 2px); */
 }
 .ThankYou {
     color: whitesmoke;
@@ -98,7 +98,7 @@
 .downloadBtns {
     width: 50%;
     margin: auto auto;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 .downloadBtn {
     border: none;
@@ -153,7 +153,7 @@
 }
 
 .eachControl {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     margin: 0px auto 10px;
@@ -165,7 +165,7 @@
     /* border: 1px solid blue; */
 }
 .eachControlDark {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     margin: 0px auto 10px;
@@ -177,7 +177,7 @@
     /* border: 1px solid blue; */
 }
 .eachControl:hover {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     margin: 0px auto 10px;
@@ -186,7 +186,7 @@
     background-color: rgb(224, 224, 224);
 }
 .eachControlDark:hover {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     margin: 0px auto 10px;
@@ -297,6 +297,9 @@
         /* border: 1px solid rgba(93, 93, 93, 0.128); */
         /* border: 1px solid blue; */
     }
+    .eachControl:first-child {
+        display: none;
+    }
     .eachControlDark {
         width: 88%;
         display: flex;
@@ -308,6 +311,9 @@
         background-color: rgb(59, 59, 59);
         /* border: 1px solid rgba(93, 93, 93, 0.128); */
         /* border: 1px solid blue; */
+    }
+    .eachControlDark:first-child {
+        display: none;
     }
     .eachControl:hover {
         width: 88%;

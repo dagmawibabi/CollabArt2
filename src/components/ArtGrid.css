@@ -114,11 +114,6 @@
     }
 }
 
-/* .artAndOverlay { */
-    /* display: none; */
-    /* display: none; */
-/* } */
-
 .artOverlay {
     z-index: 9999;
     position: fixed;
@@ -149,6 +144,9 @@
     width: 100%;
     margin: auto auto;
     /* margin-top: -40px; */
+}
+.letsAdmire p {
+    padding-bottom: 20px;    
 }
 
 /* RESPONSIVENESS */
@@ -194,13 +192,13 @@
         /* border: 1px solid red; */
     }
     .centerScaleSmall {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
         /* border: 1px solid red; */
     }
     .rightScaleSmall {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
         /* border: 1px solid red; */
     }
     .letsAdmire {
