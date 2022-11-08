@@ -2,9 +2,10 @@ import './App.css';
 import { ArtGrid } from './components/ArtGrid';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
-import { useState } from 'react'
 import { About } from './components/About';
+import { useState, useEffect } from 'react'
 
+let curAPIURLBase = 'http://localhost:5000/tupm';
 let darkModeBGIndex = 0;
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -13,6 +14,7 @@ function App() {
   const [highQualityImages, setHighQualityImages] = useState(false);
   const [showArtistDetail, setShowArtistDetail] = useState(true);
   const [isExpanded, setExpanded] = useState(false);
+  const [visitorsCount, setVisitorsCount] = useState(0);
 
   // let darkModeBGs = ["#fafafa", "#e4e5f1", "#d2d3db"]
   function switchDarkMode() {
@@ -43,6 +45,14 @@ function App() {
   function changeExpand() {
       setExpanded(!isExpanded);
   }
+
+  // Visitors Count
+  useEffect(()=>{
+    fetch(curAPIURLBase + '/addVisitorsCount') 
+    .then((response) => response.json())
+    .then((responseJSON) => {setVisitorsCount(responseJSON["visitorsCount"]);})
+    .catch((e) => console.log("error: " + e))
+  }, []);
 
   return (
     <div className="App" style={{backgroundColor: darkMode ? "#202020" : "white" } }> 
@@ -127,6 +137,7 @@ function App() {
         highQualityImages={highQualityImages} changeHighQualityImages={changeHighQualityImages}        
         magnifyOnHover={magnifyOnHover} changeMagnifyOnHover={changeMagnifyOnHover}
         isExpanded={isExpanded} changeExpand={changeExpand}
+        visitorsCount={visitorsCount}
       />
       {/* F O O T E R */}
       <Footer />

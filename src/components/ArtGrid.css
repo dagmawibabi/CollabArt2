@@ -55,7 +55,7 @@
 .centerScale {
     width: 250px;
     height: 250px;
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
 }
 .rightScale {
     width: 250px;
@@ -154,7 +154,7 @@
 
 /* RESPONSIVENESS */
 /* Phone */
-@media (max-width: 520px) {
+@media (max-width: 520px) and (max-width: 1400px) {
     .gridView {
         display: grid;
         grid-template-columns: repeat(5, 80px);
@@ -219,7 +219,7 @@
 }
 
 /* Tablet */
-@media (min-width: 521px) {
+@media (min-width: 521px) and (max-width: 1400px) {
     .gridView {
         display: grid;
         grid-template-columns: repeat(5, 180px);

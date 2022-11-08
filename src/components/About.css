@@ -222,7 +222,9 @@
     /* line-height: 1.5; */
 }
 
-
+.visitors {
+    font-size: 20px;
+}
 
 
 
@@ -382,7 +384,10 @@
         padding: 0px 0px 50px;
         /* border: 1px solid red; */
     }
-    
+    .visitors {
+        font-size: 15px;
+    }
+
 }
 
 /* Tablets */
@@ -525,7 +530,9 @@
         padding: 0px 0px 50px;
         /* border: 1px solid red; */
     }
-    
+    .visitors {
+        font-size: 18px;
+    }
 }
 
 
