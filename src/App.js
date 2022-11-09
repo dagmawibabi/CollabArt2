@@ -49,8 +49,8 @@ function App() {
   // Visitors Count
   useEffect(()=>{
     fetch(curAPIURLBase) 
-    .then((response) => response.json())
-    .then((responseJSON) => {setVisitorsCount(responseJSON["visitorsCount"]);})
+    .then((response) => {response.json(); })
+    .then((responseJSON) => {setVisitorsCount(responseJSON["visitorsCount"]); console.log(responseJSON)})
     .catch((e) => console.log("error: " + e))
   }, []);
 
