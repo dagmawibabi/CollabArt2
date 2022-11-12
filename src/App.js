@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react'
 let curAPIURLBase = 'https://dagmawibabi.com/tupm/addVisitorsCount/';
 let darkModeBGIndex = 0;
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [smallGrid, setSmallGrid] = useState(false);
   const [magnifyOnHover, setMagnifyOnHover] = useState(true);
   const [highQualityImages, setHighQualityImages] = useState(false);

@@ -259,6 +259,64 @@
 }
 
 
+@media (max-width: 400px) {
+    .eachArtPieceBigContainer {
+        /* border: 1px solid red; */
+        width: fit-content;
+        margin: auto auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.226);
+    }
+    .eachArtPieceBigContainerDark {
+        /* border: 1px solid red; */
+        width: fit-content;
+        margin: auto auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(46, 45, 45);
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        /* box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.419); */
+    }
+        .sizeBig {
+        width: 340px;
+        height: 340px;
+        margin: auto auto;
+        padding: 0px 0px 5px;
+    }
+    .sizeBigHover {
+        width: 340px;
+        height: 340px;
+        margin: auto auto;
+        padding: 0px 0px 5px;
+    }
+    .artistNameBigPieces {
+        font-weight: bold;
+        color: black;
+        font-size: 14px;
+    }
+    .artistNameBigPiecesDark {
+        font-weight: bold;
+        color: white;
+        font-size: 14px;
+    }
+    .artistLinkBigPieces {
+        color: black;
+        font-size: 12px;
+    }
+    .artistLinkBigPiecesDark {
+        color: whitesmoke;
+        font-size: 12px;
+    }
+}
 
 
 

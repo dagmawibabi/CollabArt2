@@ -38,7 +38,7 @@ export const ArtGrid = (props) => {
             "compressed": require("../assets/compressed/22.jpg"),
             "uncompressed": require("../assets/uncompressed/22.png"),
             "artist": "Yohanan Mengistu",
-            "link": "y.ohanan"
+            "link": "yoh.an.an"
         },
         {
             "compressed": require("../assets/compressed/15.jpg"),
