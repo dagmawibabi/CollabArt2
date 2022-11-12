@@ -113,7 +113,7 @@ export const About = (props) => {
             <br />
             <br />
             <br />
-            {/* <span className={props.darkMode ? "ThankYou visitors" : "ThankYouDark visitors"} style={{padding: "12px 20px", border: "solid 2px", "borderImage": "linear-gradient(90deg, purple, orange) 2", clipPath: "inset(0 round 2px)"}}> 💛 &nbsp;&nbsp; {props.visitorsCount / 2} Art Lovers Have Been Here &nbsp;&nbsp; 💛 </span> */}
+            <span className={props.darkMode ? "ThankYou visitors" : "ThankYouDark visitors"} style={{padding: "12px 20px", border: "solid 2px", "borderImage": "linear-gradient(90deg, purple, orange) 2", clipPath: "inset(0 round 2px)"}}> 💛 &nbsp;&nbsp; {props.visitorsCount / 2} Art Lovers Have Been Here &nbsp;&nbsp; 💛 </span>
         </div>
     } else if (props.content === 6) {
         return (
