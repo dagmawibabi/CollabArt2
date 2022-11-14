@@ -4,6 +4,7 @@ import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { About } from './components/About';
 import { useState, useEffect } from 'react'
+import axios from 'axios';
 
 let curAPIURLBase = 'https://dagmawibabi.com/tupm/addVisitorsCount/';
 let darkModeBGIndex = 0;
@@ -47,13 +48,18 @@ function App() {
   }
 
   // Visitors Count
-  useEffect(()=>{
-    fetch(curAPIURLBase) 
-    .then((response) => {response.json(); })
-    .then((responseJSON) => {setVisitorsCount(responseJSON["visitorsCount"]); console.log(responseJSON)})
-    .catch((e) => console.log("error: " + e))
+  // useEffect(()=>{
+  //   fetch(curAPIURLBase) 
+  //   .then((response) => {response.json(); })
+  //   .then((responseJSON) => {setVisitorsCount(responseJSON["visitorsCount"]); console.log(responseJSON)})
+  //   .catch((e) => console.log("error: " + e))
+  // }, []);
+  useEffect(() => {
+    axios.get(curAPIURLBase).then((data) => {
+      // console.log(data?.data["visitorsCount"]);
+      setVisitorsCount(data?.data["visitorsCount"]);
+    });
   }, []);
-
   return (
     <div className="App" style={{backgroundColor: darkMode ? "#202020" : "white" } }> 
       {/* H E A D E R */}

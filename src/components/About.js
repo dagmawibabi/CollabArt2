@@ -46,16 +46,16 @@ export const About = (props) => {
             <br />
             <div className='downloadBtns'>
                 <a href={projectUnity1} onClick={allResDownloadCount1} download> 
-                    <button onClick={allResDownloadCount1} className='downloadBtn'> Download Low Resolution ( 6.2 MB ) </button>
+                    <button onClick={allResDownloadCount1} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Low Resolution ( 6.2 MB ) </button>
                 </a> 
                 <a href={projectUnity2} onClick={allResDownloadCount2} download> 
-                    <button onClick={allResDownloadCount2} className='downloadBtn'> Download Medium Resolution ( 21.0 MB ) </button>
+                    <button onClick={allResDownloadCount2} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Medium Resolution ( 21.0 MB ) </button>
                 </a> 
                 <a href={projectUnity3} onClick={allResDownloadCount3} download> 
-                    <button onClick={allResDownloadCount3} className='downloadBtn'> Download High Resolution ( 39.2 MB ) </button>
+                    <button onClick={allResDownloadCount3} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download High Resolution ( 39.2 MB ) </button>
                 </a> 
                 <a href={projectUnity4} onClick={allResDownloadCount4} download> 
-                    <button onClick={allResDownloadCount4} className='downloadBtn'> Download Ultra-High Resolution ( 59.5 MB ) </button>
+                    <button onClick={allResDownloadCount4} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Ultra-High Resolution ( 59.5 MB ) </button>
                 </a> 
             </div>
         </div>
@@ -113,7 +113,7 @@ export const About = (props) => {
             <br />
             <br />
             <br />
-            <span className={props.darkMode ? "ThankYou visitors" : "ThankYouDark visitors"} style={{padding: "12px 20px", border: "solid 2px", "borderImage": "linear-gradient(90deg, purple, orange) 2", clipPath: "inset(0 round 2px)"}}> 💛 &nbsp;&nbsp; {props.visitorsCount / 2} Art Lovers Have Been Here &nbsp;&nbsp; 💛 </span>
+            <span className={props.darkMode ? "ThankYou visitors" : "ThankYouDark visitors"} style={{padding: "12px 20px", border: "solid 2px", "borderImage": "linear-gradient(90deg, purple, orange) 2", clipPath: "inset(0 round 2px)"}}> 💛 &nbsp;&nbsp; {Math.floor(props.visitorsCount / 2)} Art Lovers Have Been Here &nbsp;&nbsp; 💛 </span>
         </div>
     } else if (props.content === 6) {
         return (

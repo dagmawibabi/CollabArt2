@@ -120,6 +120,15 @@
     background-color: cyan;
     transform: scale(1.005);
 }
+.downloadBtnText {
+    color: white;
+}
+.downloadBtnText:hover {
+    color: black;
+}
+.downloadBtnTextDark {
+    color: black;
+}
 
 .socialMedias {
     display: inline;
