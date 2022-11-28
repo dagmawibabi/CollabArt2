@@ -1,0 +1,218 @@
+.headerStyle {
+    /* color: white; */
+    text-align: center;
+    padding: 20px 20px;
+    /* font-weight: bold; */
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    opacity: 0.95;
+    /* border: 1px solid red; */
+}
+.responsiveHeaderStyle {
+    /* color: white; */
+    text-align: center;
+    padding: 20px 20px;
+    /* font-weight: bold; */
+    background-color: #101010;
+    display: contents;
+    /* justify-content: space-between; */
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    opacity: 0.99;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.navigation span{
+    font-size: 16px;
+    /* margin-left: 20px; */
+    color: #dcdcdc;
+    margin: 0px 30px 0px 0px;
+}
+.navigation span:hover {
+    color: cyan;
+}
+.responsiveNavigation {
+    display: none;
+    /* border: 1px solid red; */
+    padding: 20px 20px;
+    background-color: #101010;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    opacity: 0.95;
+}
+.responsiveNavigation span{
+    font-size: 14px;
+    /* margin-left: 20px; */
+    /* display: flex; */
+    justify-content: space-between;
+    text-align: center;
+    color: #dcdcdc;
+    margin: 0px 15px;
+}
+.responsiveNavigation span:hover {
+    color: cyan;
+}
+
+a {
+    text-decoration: none;
+}
+.projectLogoAndName {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 350px;
+    /* border: 1px solid red; */
+}
+.projectLogo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    /* border: 1px solid blue; */
+}
+.projectTitle {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: auto auto;
+    /* border: 1px solid red; */
+}
+.responsiveDarkMode {
+    display: none;
+    margin-left: 80px;
+    /* border: 1px solid red; */
+}
+.responsiveDarkMode2 {
+    display: none;
+    margin-left: 80px;
+    /* border: 1px solid red; */
+}
+
+
+/* Responsiveness */
+/* Phone */
+@media (max-width: 520px) {
+    .responsiveNavigation {
+        display: block;
+    }    
+    .headerStyle {
+        /* color: white; */
+        text-align: center;
+        padding: 14px 14px;
+        /* font-weight: bold; */
+        background-color: #101010;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        opacity: 0.95;
+    }
+    .navigation span{
+        font-size: 12px;
+        /* margin-left: 20px; */
+        color: #dcdcdc;
+        margin: 0px 0px 0px 0px;
+        display: none;
+    }
+    .projectLogo {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        margin-right: 10px;
+        /* border: 1px solid blue; */
+    }
+    .projectTitle {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        margin: auto auto;
+        /* border: 1px solid red; */
+    }
+    .projectLogoAndName {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10px;
+        /* border: 1px solid red; */
+    }
+    .darkMode {
+        display: none;
+    }
+    .responsiveDarkMode {
+        display: block;
+    }
+    .responsiveDarkMode2 {
+        display: none;
+    }
+}
+
+/* Tablets */
+@media (min-width: 521px) and (max-width: 1400px) {
+    /* .responsiveNavigation {
+        display: block;
+    }     */
+    .headerStyle {
+        /* color: white; */
+        text-align: center;
+        padding: 14px 14px;
+        /* font-weight: bold; */
+        background-color: #101010;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        opacity: 0.95;
+        /* border: 1px solid blue; */
+    }
+    .navigation {
+        display: flex;
+        padding-top: 5px;
+        justify-content: center;
+        /* border: 1px solid blue; */
+    }
+    .navigation span{
+        font-size: 16px;
+        /* margin-left: 20px; */
+        color: #dcdcdc;
+        margin: 10px 10px;
+        /* display: none; */
+        /* border: 1px solid blue; */
+    }
+    .projectLogo {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        margin-right: 10px;
+        /* border: 1px solid blue; */
+    }
+    .projectTitle {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        margin: auto auto;
+        /* border: 1px solid red; */
+    }
+    .projectLogoAndName {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10px;
+        /* border: 1px solid red; */
+    }
+    .darkMode {
+        display: none;
+    }
+    .responsiveDarkMode2 {
+        display: inline-block;
+        /* padding-top: 10px; */
+        /* border: 1px solid red; */
+    }
+}

@@ -1,0 +1,323 @@
+.eachArtPieceBigContainer {
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: auto auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.226);
+}
+.eachArtPieceBigContainerDark {
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: auto auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(46, 45, 45);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    /* box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.419); */
+}
+
+.sizeBig {
+    width: 600px;
+    height: 600px;
+    margin: auto auto;
+    padding: 0px 0px 10px;
+}
+.sizeBigHover {
+    width: 600px;
+    height: 600px;
+    margin: auto auto;
+    padding: 0px 0px 10px;
+}
+.sizeBigHover:hover {
+    animation: scaleUp 0.2s linear forwards;
+}
+.sizeBigHover:not(:hover) {
+    animation: scaleDown 0.3s linear backwards;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(45deg);
+        backdrop-filter: blur(20px);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1.0);
+    } 
+    to {
+        transform: scale(1.0);
+    }
+}
+
+.artistNameBigPieces {
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+.artistNameBigPiecesDark {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+.artistLinkBigPieces {
+    color: black;
+    font-size: 14px;
+}
+.artistLinkBigPiecesDark {
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.captionAndDownload {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    align-content: center;
+    /* border: 1px solid red; */
+}
+.captionAndDownloadDark {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    align-content: center;
+    /* border: 1px solid red; */
+}
+
+.caption {
+    text-align: left;
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: black;
+    /* border: 1px solid red; */
+}
+.captionDark {
+    text-align: left;
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: black;
+    /* border: 1px solid red; */
+}
+
+.caption:hover {
+    text-align: left;
+    padding: 2px 10px;
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+    /* border: 1px solid red; */
+}
+.captionDark:hover {
+    text-align: left;
+    padding: 2px 10px;
+    cursor: pointer;
+    background-color: rgb(67, 65, 65);
+    /* border: 1px solid red; */
+}
+
+.viewEachArtPieceBigBtn {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 5px 5px 0px;
+    padding: 5px 7px;
+    /* background-color: rgb(172, 172, 172); */
+}
+.viewEachArtPieceBigBtnDark {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 5px 5px 0px;
+    padding: 5px 7px;
+    background-color: rgb(172, 172, 172);
+}
+.viewEachArtPieceBigBtn:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 5px 5px 0px;
+    padding: 5px 7px;
+    cursor: pointer;    
+    background-color: dodgerblue;
+}
+.viewEachArtPieceBigBtnDark:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 5px 5px 0px;
+    padding: 5px 7px;
+    cursor: pointer;    
+    background-color: greenyellow;
+}
+.downloadEachArtPieceBigBtn {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 6px 5px 0px;
+    padding: 5px;
+    /* background-color: rgb(172, 172, 172); */
+}
+.downloadEachArtPieceBigBtnDark {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 6px 5px 0px;
+    padding: 5px;
+    background-color: rgb(172, 172, 172);
+}
+
+.downloadEachArtPieceBigBtn:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 6px 5px 0px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: cyan;
+}
+.downloadEachArtPieceBigBtnDark:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 6px 5px 0px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: cyan;
+}
+
+
+@media (max-width: 500px) {
+    .eachArtPieceBigContainer {
+        /* border: 1px solid red; */
+        width: fit-content;
+        margin: auto auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.226);
+    }
+    .eachArtPieceBigContainerDark {
+        /* border: 1px solid red; */
+        width: fit-content;
+        margin: auto auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(46, 45, 45);
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        /* box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.419); */
+    }
+        .sizeBig {
+        width: 380px;
+        height: 380px;
+        margin: auto auto;
+        padding: 0px 0px 5px;
+    }
+    .sizeBigHover {
+        width: 380px;
+        height: 380px;
+        margin: auto auto;
+        padding: 0px 0px 5px;
+    }
+    .artistNameBigPieces {
+        font-weight: bold;
+        color: black;
+        font-size: 14px;
+    }
+    .artistNameBigPiecesDark {
+        font-weight: bold;
+        color: white;
+        font-size: 14px;
+    }
+    .artistLinkBigPieces {
+        color: black;
+        font-size: 12px;
+    }
+    .artistLinkBigPiecesDark {
+        color: whitesmoke;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .eachArtPieceBigContainer {
+        /* border: 1px solid red; */
+        width: fit-content;
+        margin: auto auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.226);
+    }
+    .eachArtPieceBigContainerDark {
+        /* border: 1px solid red; */
+        width: fit-content;
+        margin: auto auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(46, 45, 45);
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        /* box-shadow: 0px 0px 50px rgba(44, 44, 45, 0.419); */
+    }
+        .sizeBig {
+        width: 340px;
+        height: 340px;
+        margin: auto auto;
+        padding: 0px 0px 5px;
+    }
+    .sizeBigHover {
+        width: 340px;
+        height: 340px;
+        margin: auto auto;
+        padding: 0px 0px 5px;
+    }
+    .artistNameBigPieces {
+        font-weight: bold;
+        color: black;
+        font-size: 14px;
+    }
+    .artistNameBigPiecesDark {
+        font-weight: bold;
+        color: white;
+        font-size: 14px;
+    }
+    .artistLinkBigPieces {
+        color: black;
+        font-size: 12px;
+    }
+    .artistLinkBigPiecesDark {
+        color: whitesmoke;
+        font-size: 12px;
+    }
+}
+
+
+
+
