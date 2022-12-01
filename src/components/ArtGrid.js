@@ -154,6 +154,161 @@ export const ArtGrid = (props) => {
             "artist": "Tigist Dula",
             "link": "tg_dula"
         },
+        // A
+        {
+            "compressed": require("../assets/compressed/26.jpg"),
+            "uncompressed": require("../assets/uncompressed/26.jpg"),
+            "artist": "Tesfamariam Teshome",
+            "link": "hopethio"
+        },
+        {
+            "compressed": require("../assets/compressed/38.png"),
+            "uncompressed": require("../assets/uncompressed/38.png"),
+            "artist": "Amanuel Dejene",
+            "link": "amex_ttw"
+        },
+        {
+            "compressed": require("../assets/compressed/28.png"),
+            "uncompressed": require("../assets/uncompressed/28.png"),
+            "artist": "Noah Eyob",
+            "link": "1noahark"
+        },
+        {
+            "compressed": require("../assets/compressed/46.png"),
+            "uncompressed": require("../assets/uncompressed/46.png"),
+            "artist": "Medhanit Bitew",
+            "link": "azul_celeste8187"
+        },
+        {
+            "compressed": require("../assets/compressed/27.jpg"),
+            "uncompressed": require("../assets/uncompressed/27.jpg"),
+            "artist": "Astray Nahusenay",
+            "link": "icebirrd"
+        },
+        // B
+        {
+            "compressed": require("../assets/compressed/32.jpg"),
+            "uncompressed": require("../assets/uncompressed/32.jpg"),
+            "artist": "Astray Nahusenay",
+            "link": "icebirrd"
+        },
+        {
+            "compressed": require("../assets/compressed/33.jpg"),
+            "uncompressed": require("../assets/uncompressed/33.jpg"),
+            "artist": "Astray Nahusenay",
+            "link": "icebirrd"
+        },
+        {
+            "compressed": require("../assets/compressed/34.jpg"),
+            "uncompressed": require("../assets/uncompressed/34.jpg"),
+            "artist": "Astray Nahusenay",
+            "link": "icebirrd"
+        },
+        {
+            "compressed": require("../assets/compressed/35.jpg"),
+            "uncompressed": require("../assets/uncompressed/35.jpg"),
+            "artist": "Astray Nahusenay",
+            "link": "icebirrd"
+        },
+        {
+            "compressed": require("../assets/compressed/36.jpg"),
+            "uncompressed": require("../assets/uncompressed/36.jpg"),
+            "artist": "Astray Nahusenay",
+            "link": "icebirrd"
+        },
+        // C
+        {
+            "compressed": require("../assets/compressed/31.jpg"),
+            "uncompressed": require("../assets/uncompressed/31.jpg"),
+            "artist": "Lehem Moges",
+            "link": "sensei.gong"
+        },
+        {
+            "compressed": require("../assets/compressed/39.jpg"),
+            "uncompressed": require("../assets/uncompressed/39.jpg"),
+            "artist": "Mikias Muluneh",
+            "link": "mike_muluneh"
+        },
+        {
+            "compressed": require("../assets/compressed/29.PNG"),
+            "uncompressed": require("../assets/uncompressed/29.PNG"),
+            "artist": "Raphaella Fekadu",
+            "link": "raphaelafkdtes"
+        },
+        {
+            "compressed": require("../assets/compressed/49.jpg"),
+            "uncompressed": require("../assets/uncompressed/49.jpg"),
+            "artist": "Bereket Girma",
+            "link": "bereket6244"
+        },
+        {
+            "compressed": require("../assets/compressed/30.png"),
+            "uncompressed": require("../assets/uncompressed/30.png"),
+            "artist": "Eyob Solomon",
+            "link": "fax_21"
+        },
+        // D
+        {
+            "compressed": require("../assets/compressed/37.jpg"),
+            "uncompressed": require("../assets/uncompressed/37.png"),
+            "artist": "Rufael Anteneh",
+            "link": "rufael1"
+        },
+        {
+            "compressed": require("../assets/compressed/48.png"),
+            "uncompressed": require("../assets/uncompressed/48.png"),
+            "artist": "Nura Mohammed",
+            "link": "runa_m1"
+        },
+        {
+            "compressed": require("../assets/compressed/40.png"),
+            "uncompressed": require("../assets/uncompressed/40.png"),
+            "artist": "Betemariam Brook",
+            "link": "arc_hive21"
+        },
+        {
+            "compressed": require("../assets/compressed/50.jpg"),
+            "uncompressed": require("../assets/uncompressed/50.jpg"),
+            "artist": "Hanan Juhar",
+            "link": "hanuni1212"
+        },
+        {
+            "compressed": require("../assets/compressed/42.jpg"),
+            "uncompressed": require("../assets/uncompressed/42.jpg"),
+            "artist": "Luladay B",
+            "link": "luladaybb"
+        },
+        // E
+        {
+            "compressed": require("../assets/compressed/41.png"),
+            "uncompressed": require("../assets/uncompressed/41.png"),
+            "artist": "Abel Bedilu",
+            "link": "abelbedilu"
+        },
+        {
+            "compressed": require("../assets/compressed/44.png"),
+            "uncompressed": require("../assets/uncompressed/44.png"),
+            "artist": "Abel Bedilu",
+            "link": "abelbedilu"
+        },
+        {
+            "compressed": require("../assets/compressed/47.png"),
+            "uncompressed": require("../assets/uncompressed/47.png"),
+            "artist": "Mahder Gebru",
+            "link": "mery.21th"
+        },
+        {
+            "compressed": require("../assets/compressed/45.png"),
+            "uncompressed": require("../assets/uncompressed/45.png"),
+            "artist": "Daniel Habtamu",
+            "link": "danielhabtamu_"
+        },
+        {
+            "compressed": require("../assets/compressed/43.jpg"),
+            "uncompressed": require("../assets/uncompressed/43.jpg"),
+            "artist": "Luladay B",
+            "link": "luladaybb"
+        },
     ];
     function showDetails(event) {
         let detailDIV = document.getElementsByClassName("artOverlay")[0];
