@@ -165,7 +165,7 @@ export const ArtGrid = (props) => {
             "compressed": require("../assets/compressed/38.png"),
             "uncompressed": require("../assets/uncompressed/38.png"),
             "artist": "Amanuel Dejene",
-            "link": "amex_ttw"
+            "link": "amex.ttw"
         },
         {
             "compressed": require("../assets/compressed/28.png"),
@@ -245,70 +245,70 @@ export const ArtGrid = (props) => {
             "compressed": require("../assets/compressed/30.png"),
             "uncompressed": require("../assets/uncompressed/30.png"),
             "artist": "Eyob Solomon",
-            "link": "fax_21"
+            "link": "21_inthe_street"
         },
         // D
-        {
-            "compressed": require("../assets/compressed/37.jpg"),
-            "uncompressed": require("../assets/uncompressed/37.png"),
-            "artist": "Rufael Anteneh",
-            "link": "rufael1"
-        },
-        {
-            "compressed": require("../assets/compressed/48.png"),
-            "uncompressed": require("../assets/uncompressed/48.png"),
-            "artist": "Nura Mohammed",
-            "link": "runa_m1"
-        },
-        {
-            "compressed": require("../assets/compressed/40.png"),
-            "uncompressed": require("../assets/uncompressed/40.png"),
-            "artist": "Betemariam Brook",
-            "link": "arc_hive21"
-        },
-        {
-            "compressed": require("../assets/compressed/50.jpg"),
-            "uncompressed": require("../assets/uncompressed/50.jpg"),
-            "artist": "Hanan Juhar",
-            "link": "hanuni1212"
-        },
-        {
-            "compressed": require("../assets/compressed/42.jpg"),
-            "uncompressed": require("../assets/uncompressed/42.jpg"),
-            "artist": "Luladay B",
-            "link": "luladaybb"
-        },
-        // E
-        {
-            "compressed": require("../assets/compressed/41.png"),
-            "uncompressed": require("../assets/uncompressed/41.png"),
-            "artist": "Abel Bedilu",
-            "link": "abelbedilu"
-        },
-        {
-            "compressed": require("../assets/compressed/44.png"),
-            "uncompressed": require("../assets/uncompressed/44.png"),
-            "artist": "Abel Bedilu",
-            "link": "abelbedilu"
-        },
-        {
-            "compressed": require("../assets/compressed/47.png"),
-            "uncompressed": require("../assets/uncompressed/47.png"),
-            "artist": "Mahder Gebru",
-            "link": "mery.21th"
-        },
-        {
-            "compressed": require("../assets/compressed/45.png"),
-            "uncompressed": require("../assets/uncompressed/45.png"),
-            "artist": "Daniel Habtamu",
-            "link": "danielhabtamu_"
-        },
-        {
-            "compressed": require("../assets/compressed/43.jpg"),
-            "uncompressed": require("../assets/uncompressed/43.jpg"),
-            "artist": "Luladay B",
-            "link": "luladaybb"
-        },
+        // {
+        //     "compressed": require("../assets/compressed/37.jpg"),
+        //     "uncompressed": require("../assets/uncompressed/37.png"),
+        //     "artist": "Rufael Anteneh",
+        //     "link": "rufael1"
+        // },
+        // {
+        //     "compressed": require("../assets/compressed/48.png"),
+        //     "uncompressed": require("../assets/uncompressed/48.png"),
+        //     "artist": "Nura Mohammed",
+        //     "link": "runa_m1"
+        // },
+        // {
+        //     "compressed": require("../assets/compressed/40.png"),
+        //     "uncompressed": require("../assets/uncompressed/40.png"),
+        //     "artist": "Betemariam Brook",
+        //     "link": "arc_hive21"
+        // },
+        // {
+        //     "compressed": require("../assets/compressed/50.jpg"),
+        //     "uncompressed": require("../assets/uncompressed/50.jpg"),
+        //     "artist": "Hanan Juhar",
+        //     "link": "hanuni1212"
+        // },
+        // {
+        //     "compressed": require("../assets/compressed/42.jpg"),
+        //     "uncompressed": require("../assets/uncompressed/42.jpg"),
+        //     "artist": "Luladay Beyene",
+        //     "link": "luladaybb"
+        // },
+        // // E
+        // {
+        //     "compressed": require("../assets/compressed/41.png"),
+        //     "uncompressed": require("../assets/uncompressed/41.png"),
+        //     "artist": "Abel Bedilu",
+        //     "link": "abelbedilu"
+        // },
+        // {
+        //     "compressed": require("../assets/compressed/44.png"),
+        //     "uncompressed": require("../assets/uncompressed/44.png"),
+        //     "artist": "Abel Bedilu",
+        //     "link": "abelbedilu"
+        // },
+        // {
+        //     "compressed": require("../assets/compressed/47.png"),
+        //     "uncompressed": require("../assets/uncompressed/47.png"),
+        //     "artist": "Mahder Gebru",
+        //     "link": "mery.21st"
+        // },
+        // {
+        //     "compressed": require("../assets/compressed/45.png"),
+        //     "uncompressed": require("../assets/uncompressed/45.png"),
+        //     "artist": "Daniel Habtamu",
+        //     "link": "danielhabtamu_"
+        // },
+        // {
+        //     "compressed": require("../assets/compressed/43.jpg"),
+        //     "uncompressed": require("../assets/uncompressed/43.jpg"),
+        //     "artist": "Luladay Beyene",
+        //     "link": "luladaybb"
+        // },
     ];
     function showDetails(event) {
         let detailDIV = document.getElementsByClassName("artOverlay")[0];
@@ -335,13 +335,21 @@ export const ArtGrid = (props) => {
         detailDIV.style.visibility = "hidden";
     }
     function gotoIGPage(event) {
-        let url = "https://www.instagram.com/" + artList[event.target.alt]["link"];
-        console.log(event.target.alt);
-        window.open(url, '_blank').focus();
+        // let url = "https://www.instagram.com/" + artList[event.target.alt]["link"];
+        // console.log(event.target.alt);
+        // window.open(url, '_blank').focus();
+        let url = "";
+        if(event.target.alt > 0){
+            url = "#" + (event.target.alt - 1);
+        } else {
+            url = "#" + event.target.alt;
+        }
+        console.log(url);
+        window.open(url, '_self').focus();
     }
     function gotoIGPage2(event) {
         let url = "https://www.instagram.com/" + artList[event.target.id]["link"];
-        // console.log(event.target.id);
+        console.log(event.target.id);
         window.open(url, '_blank').focus();
     }
     let artHover = (props.magnifyOnHover ? "artHoverHover" : "artHover");
@@ -375,7 +383,7 @@ export const ArtGrid = (props) => {
                             return (
                                 content["uncompressed"] === "" ?
                                     <div> </div>
-                                : <EachArtPieceBig key={index} darkMode={props.darkMode} magnifyOnHover={props.magnifyOnHover} image={props.highQualityImages ? content["uncompressed"] : content["compressed"]} HQImage={content["uncompressed"]} alt={index} gotoIGPage2={gotoIGPage2} artist={content["artist"]} link={content["link"]} />
+                                : <EachArtPieceBig key={index} id={index} darkMode={props.darkMode} magnifyOnHover={props.magnifyOnHover} image={props.highQualityImages ? content["uncompressed"] : content["compressed"]} HQImage={content["uncompressed"]} alt={index} gotoIGPage2={gotoIGPage2} artist={content["artist"]} link={content["link"]} />
                             )
                         }
                     )   
