@@ -248,67 +248,67 @@ export const ArtGrid = (props) => {
             "link": "21_inthe_street"
         },
         // D
-        // {
-        //     "compressed": require("../assets/compressed/37.jpg"),
-        //     "uncompressed": require("../assets/uncompressed/37.png"),
-        //     "artist": "Rufael Anteneh",
-        //     "link": "rufael1"
-        // },
-        // {
-        //     "compressed": require("../assets/compressed/48.png"),
-        //     "uncompressed": require("../assets/uncompressed/48.png"),
-        //     "artist": "Nura Mohammed",
-        //     "link": "runa_m1"
-        // },
-        // {
-        //     "compressed": require("../assets/compressed/40.png"),
-        //     "uncompressed": require("../assets/uncompressed/40.png"),
-        //     "artist": "Betemariam Brook",
-        //     "link": "arc_hive21"
-        // },
-        // {
-        //     "compressed": require("../assets/compressed/50.jpg"),
-        //     "uncompressed": require("../assets/uncompressed/50.jpg"),
-        //     "artist": "Hanan Juhar",
-        //     "link": "hanuni1212"
-        // },
-        // {
-        //     "compressed": require("../assets/compressed/42.jpg"),
-        //     "uncompressed": require("../assets/uncompressed/42.jpg"),
-        //     "artist": "Luladay Beyene",
-        //     "link": "luladaybb"
-        // },
-        // // E
-        // {
-        //     "compressed": require("../assets/compressed/41.png"),
-        //     "uncompressed": require("../assets/uncompressed/41.png"),
-        //     "artist": "Abel Bedilu",
-        //     "link": "abelbedilu"
-        // },
-        // {
-        //     "compressed": require("../assets/compressed/44.png"),
-        //     "uncompressed": require("../assets/uncompressed/44.png"),
-        //     "artist": "Abel Bedilu",
-        //     "link": "abelbedilu"
-        // },
-        // {
-        //     "compressed": require("../assets/compressed/47.png"),
-        //     "uncompressed": require("../assets/uncompressed/47.png"),
-        //     "artist": "Mahder Gebru",
-        //     "link": "mery.21st"
-        // },
-        // {
-        //     "compressed": require("../assets/compressed/45.png"),
-        //     "uncompressed": require("../assets/uncompressed/45.png"),
-        //     "artist": "Daniel Habtamu",
-        //     "link": "danielhabtamu_"
-        // },
-        // {
-        //     "compressed": require("../assets/compressed/43.jpg"),
-        //     "uncompressed": require("../assets/uncompressed/43.jpg"),
-        //     "artist": "Luladay Beyene",
-        //     "link": "luladaybb"
-        // },
+        {
+            "compressed": require("../assets/compressed/37.jpg"),
+            "uncompressed": require("../assets/uncompressed/37.png"),
+            "artist": "Rufael Anteneh",
+            "link": "rufael_art"
+        },
+        {
+            "compressed": require("../assets/compressed/48.png"),
+            "uncompressed": require("../assets/uncompressed/48.png"),
+            "artist": "Nura Mohammed",
+            "link": "runa_m1"
+        },
+        {
+            "compressed": require("../assets/compressed/40.png"),
+            "uncompressed": require("../assets/uncompressed/40.png"),
+            "artist": "Betemariam Brook",
+            "link": "arc_hive21"
+        },
+        {
+            "compressed": require("../assets/compressed/50.jpg"),
+            "uncompressed": require("../assets/uncompressed/50.jpg"),
+            "artist": "Hanan Juhar",
+            "link": "hanuni1212"
+        },
+        {
+            "compressed": require("../assets/compressed/42.jpg"),
+            "uncompressed": require("../assets/uncompressed/42.jpg"),
+            "artist": "Luladay Beyene",
+            "link": "littleundecided"
+        },
+        // E
+        {
+            "compressed": require("../assets/compressed/41.png"),
+            "uncompressed": require("../assets/uncompressed/41.png"),
+            "artist": "Abel Bedilu",
+            "link": "abelbedilu"
+        },
+        {
+            "compressed": require("../assets/compressed/44.png"),
+            "uncompressed": require("../assets/uncompressed/44.png"),
+            "artist": "Abel Bedilu",
+            "link": "abelbedilu"
+        },
+        {
+            "compressed": require("../assets/compressed/47.png"),
+            "uncompressed": require("../assets/uncompressed/47.png"),
+            "artist": "Mahder Gebru",
+            "link": "mery.21st"
+        },
+        {
+            "compressed": require("../assets/compressed/45.png"),
+            "uncompressed": require("../assets/uncompressed/45.png"),
+            "artist": "Daniel Habtamu",
+            "link": "danielhabtamu_"
+        },
+        {
+            "compressed": require("../assets/compressed/43.jpg"),
+            "uncompressed": require("../assets/uncompressed/43.jpg"),
+            "artist": "Luladay Beyene",
+            "link": "littleundecided"
+        },
     ];
     function showDetails(event) {
         let detailDIV = document.getElementsByClassName("artOverlay")[0];

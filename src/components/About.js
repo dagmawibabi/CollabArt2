@@ -1,11 +1,9 @@
 import './About.css'
-// import projectUnity1 from '../assets/uncompressed/ALL1.png'
-// import projectUnity2 from '../assets/uncompressed/ALL2.png'
-// import projectUnity3 from '../assets/uncompressed/ALL3.png'
-// import projectUnity4 from '../assets/uncompressed/ALL4.png'
-import projectUnity5 from '../assets/uncompressed/ALL5.png'
-import projectUnity6 from '../assets/uncompressed/ALL6.png'
-import projectUnity7 from '../assets/uncompressed/ALL7.png'
+import projectUnity1 from '../assets/uncompressed/ALL1.png'
+import projectUnity2 from '../assets/uncompressed/ALL2.png'
+import projectUnity3 from '../assets/uncompressed/ALL3.png'
+import projectUnity4 from '../assets/uncompressed/ALL4.png'
+
 import TextFormat1 from '../assets/icons/TextFormat1.png'
 import TextFormat2 from '../assets/icons/TextFormat2.png'
 import Positions from '../assets/icons/positions.png'
@@ -30,11 +28,11 @@ export const About = (props) => {
         .then((response) => response.json())
         .catch((e) => console.log("error: " + e))
     }
-    // async function allResDownloadCount4(event) {
-    //     fetch(curAPIURLBase + '4')
-    //     .then((response) => response.json())
-    //     .catch((e) => console.log("error: " + e))
-    // }
+    async function allResDownloadCount4(event) {
+        fetch(curAPIURLBase + '4')
+        .then((response) => response.json())
+        .catch((e) => console.log("error: " + e))
+    }
 
     // UI
     if(props.content === 1){
@@ -48,18 +46,18 @@ export const About = (props) => {
             <p className={props.darkMode ? "description" : "descriptionDark"}> You can download this gorgeous art piece in different resolutions for free. </p>
             <br />
             <div className='downloadBtns'>
-                <a href={projectUnity5} onClick={allResDownloadCount1} download> 
-                    <button onClick={allResDownloadCount1} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Low Resolution ( 8.0 MB ) </button>
+                <a href={projectUnity1} onClick={allResDownloadCount1} download> 
+                    <button onClick={allResDownloadCount1} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Low Resolution ( 11.7 MB ) </button>
                 </a> 
-                <a href={projectUnity6} onClick={allResDownloadCount2} download> 
-                    <button onClick={allResDownloadCount2} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Medium Resolution ( 77.2 MB ) </button>
+                <a href={projectUnity2} onClick={allResDownloadCount2} download> 
+                    <button onClick={allResDownloadCount2} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Medium Resolution ( 38.9 MB ) </button>
                 </a> 
-                <a href={projectUnity7} onClick={allResDownloadCount3} download> 
-                    <button onClick={allResDownloadCount3} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download High Resolution ( 79.4 MB ) </button>
+                <a href={projectUnity3} onClick={allResDownloadCount3} download> 
+                    <button onClick={allResDownloadCount3} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download High Resolution ( 69.1 MB ) </button>
                 </a> 
-                {/* <a href={projectUnity4} onClick={allResDownloadCount4} download> 
-                    <button onClick={allResDownloadCount4} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Ultra-High Resolution ( 59.5 MB ) </button>
-                </a>  */}
+                <a href={projectUnity4} onClick={allResDownloadCount4} download> 
+                    <button onClick={allResDownloadCount4} className={props.darkMode ? 'downloadBtn downloadBtnTextDark' : 'downloadBtn downloadBtnText'}> Download Ultra-High Resolution ( 102.2 MB ) </button>
+                </a> 
             </div>
         </div>
     } else if (props.content === 3) {
